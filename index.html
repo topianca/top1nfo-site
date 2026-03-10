@@ -1,61 +1,164 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Top1nfo | Tecnologia de Elite</title>
+    <title>Top1nfo | Soluções em Tecnologia</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
     <style>
-        body { background-color: #0a0a0a; color: #ffffff; font-family: 'Inter', sans-serif; }
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
-        .gradient-text { background: linear-gradient(90deg, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #030712; color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        
+        /* Efeitos Premium */
+        .glass-nav { background: rgba(3, 7, 18, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-tech { background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.4) 100%); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .card-tech:hover { border-color: rgba(56, 189, 248, 0.4); transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15); }
+        
+        /* Gradientes de Texto */
+        .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        /* Fundo Dinâmico (Grid) */
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
     </style>
 </head>
-<body class="antialiased">
+<body class="antialiased bg-grid relative">
 
-    <nav class="fixed w-full z-50 px-6 py-4 flex justify-between items-center glass">
-        <div class="text-xl font-bold tracking-tighter uppercase">Top<span class="text-blue-500">1</span>nfo</div>
-        <a href="https://wa.me/5512996005169" class="text-sm border border-white/20 px-4 py-2 rounded-full hover:bg-white hover:text-black transition-all">Contato</a>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+                <i data-lucide="cpu" class="text-sky-400 w-8 h-8"></i>
+                <span>TOP<span class="text-sky-400">1</span>NFO</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#servicos" class="hover:text-sky-400 transition-colors">Especialidades</a>
+                <a href="#sobre" class="hover:text-sky-400 transition-colors">A Empresa</a>
+            </div>
+            <a href="https://wa.me/5512996005169" target="_blank" class="bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+                Fale com um Especialista
+            </a>
+        </div>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-4">
-        <h1 class="text-5xl md:text-7xl font-extrabold gradient-text mb-6">Tecnologia de elite em Pedra Bonita.</h1>
-        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mb-8">Soluções especializadas em TI, Hardware e Redes. Experiência e confiança desde 2011.</p>
-        <div class="flex gap-4">
-            <a href="#servicos" class="bg-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-blue-700 transition">Ver Serviços</a>
-            <a href="https://wa.me/5512996005169" class="glass px-8 py-3 rounded-lg font-medium hover:bg-white/10 transition">Orçamento Direto</a>
-        </div>
-    </section>
-
-    <section id="servicos" class="py-20 px-6 max-w-6xl mx-auto">
-        <h2 class="text-3xl font-bold mb-12 text-center">Nossas Especialidades</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div class="glass p-8 rounded-2xl">
-                <div class="text-blue-500 mb-4 text-2xl">💻</div>
-                <h3 class="font-bold mb-2">Hardware de Elite</h3>
-                <p class="text-sm text-slate-400">Montagem e manutenção de Workstations e PCs de alta performance.</p>
+    <section class="pt-40 pb-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-8">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                Atendimento Especializado em Pedra Bonita
             </div>
-            <div class="glass p-8 rounded-2xl">
-                <div class="text-blue-500 mb-4 text-2xl">🌐</div>
-                <h3 class="font-bold mb-2">Redes Estruturadas</h3>
-                <p class="text-sm text-slate-400">Projetos de conectividade estável para comércios e fazendas.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl">
-                <div class="text-blue-500 mb-4 text-2xl">🖥️</div>
-                <h3 class="font-bold mb-2">Sistemas & Suporte</h3>
-                <p class="text-sm text-slate-400">Otimização de software e suporte técnico especializado.</p>
-            </div>
-            <div class="glass p-8 rounded-2xl">
-                <div class="text-blue-500 mb-4 text-2xl">🕸️</div>
-                <h3 class="font-bold mb-2">Web & Digital</h3>
-                <p class="text-sm text-slate-400">Criação de sites e gestão de presença no Google Maps.</p>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-gradient-white leading-tight">
+                Infraestrutura e Tecnologia <br /> <span class="text-gradient">sem gargalos.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+                Hardware de alta performance e redes estruturadas de confiança. Desempenho máximo para o seu negócio e estabilidade para a sua propriedade rural.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5512996005169" target="_blank" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-xl font-bold hover:bg-white transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-5 h-5"></i> Solicitar Orçamento
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium border border-slate-700 hover:border-slate-500 transition-colors flex items-center justify-center gap-2">
+                    Nossas Soluções <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 border-t border-white/10 text-center text-slate-500 text-sm">
-        <p>&copy; 2026 Top1nfo - Soluções em Tecnologia. Pedra Bonita, MG.</p>
+    <section id="servicos" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nível de Serviço Corporativo</h2>
+                <p class="text-slate-400">Soluções robustas desenhadas para quem não pode parar de trabalhar.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-tech p-8 rounded-2xl">
+                    <div class="bg-sky-500/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-sky-500/20">
+                        <i data-lucide="server" class="text-sky-400 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Hardware High-End</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Montagem e manutenção avançada de Workstations e estações de alta capacidade gráfica e processamento.</p>
+                </div>
+                <div class="card-tech p-8 rounded-2xl">
+                    <div class="bg-sky-500/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-sky-500/20">
+                        <i data-lucide="wifi" class="text-sky-400 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Redes & Conectividade</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Projetos de infraestrutura de rede estável. Fim das quedas de conexão no seu comércio ou fazenda.</p>
+                </div>
+                <div class="card-tech p-8 rounded-2xl">
+                    <div class="bg-sky-500/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-sky-500/20">
+                        <i data-lucide="monitor-smartphone" class="text-sky-400 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sistemas & Suporte</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Otimização de sistemas operacionais, resolução de gargalos e suporte técnico especializado para empresas.</p>
+                </div>
+                <div class="card-tech p-8 rounded-2xl">
+                    <div class="bg-sky-500/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 border border-sky-500/20">
+                        <i data-lucide="globe" class="text-sky-400 w-7 h-7"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Presença Digital</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Desenvolvimento web ágil e posicionamento estratégico do seu negócio no mapa digital e Google Meu Negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto card-tech p-10 md:p-14 rounded-3xl border border-slate-800 flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6">A mente técnica por trás.</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com sólido background corporativo em TI desde 2011. 
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Com visão direcionada para o futuro da conectividade e Internet das Coisas (IoT), a nossa missão é trazer para a região do Córrego do Café e Pedra Bonita o mesmo rigor técnico exigido nas grandes empresas do país. Se o seu equipamento exige performance extrema ou sua rede requer estabilidade absoluta, você está no lugar certo.
+                </p>
+                <div class="flex items-center gap-4 border-t border-slate-800 pt-6">
+                    <i data-lucide="shield-check" class="text-sky-400 w-8 h-8"></i>
+                    <div>
+                        <p class="font-bold text-sm">Experiência Comprovada</p>
+                        <p class="text-xs text-slate-500">Mais de uma década solucionando desafios de tecnologia.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="aspect-square rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?q=80&w=600&auto=format&fit=crop')] bg-cover bg-center opacity-40 mix-blend-luminosity"></div>
+                    <i data-lucide="cpu" class="text-sky-400 w-24 h-24 relative z-10 opacity-80"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-12 border-t border-slate-800/60 text-slate-500 text-sm bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="text-xl font-bold tracking-tighter text-white mb-4 flex items-center gap-2">
+                    <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> TOP<span class="text-sky-400">1</span>NFO
+                </div>
+                <p class="text-slate-400">Tecnologia sem paliativos.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Contato & Operação</h4>
+                <p class="mb-2"><i data-lucide="map-pin" class="w-4 h-4 inline mr-2 text-sky-400"></i>Pedra Bonita / Córrego do Café, MG</p>
+                <p><i data-lucide="clock" class="w-4 h-4 inline mr-2 text-sky-400"></i>Atendimento: Segunda a Sexta-feira</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Redes</h4>
+                <a href="#" class="hover:text-sky-400 transition-colors block mb-2">Instagram (@top1nf)</a>
+                <a href="#" class="hover:text-sky-400 transition-colors block">LinkedIn</a>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 text-center border-t border-slate-800 pt-8 text-xs">
+            <p>&copy; 2026 Top1nfo. Todos os direitos reservados. Liderado por Thiago Pianca.</p>
+        </div>
     </footer>
 
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
