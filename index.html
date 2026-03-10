@@ -3,17 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Top1nfo | Soluções em Tecnologia – Pedra Bonita, MG</title>
-  <meta name="description" content="Manutenção de computadores, redes rurais, câmeras, criação de sistemas, aulas de informática e assessoria digital em Pedra Bonita e região." />
-  <meta name="keywords" content="técnico informática pedra bonita, internet rural, manutenção pc, câmeras, criação de sistemas, aulas de informática, licitações, top1nfo" />
-  <meta name="author" content="Thiago Pianca" />
-  <link rel="canonical" href="https://top1nfo.com.br" />
-
+  <title>Top1nfo | Consultoria de Tecnologia de Elite</title>
+  
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  
   <script defer src="https://unpkg.com/lucide@latest"></script>
 
   <script type="application/ld+json">
@@ -21,73 +16,111 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Top1nfo",
+    "image": "https://top1nfo-site.vercel.app/logo.png",
     "telephone": "+55 12 99600-5169",
+    "url": "https://top1nfo-site.vercel.app",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Pedra Bonita",
       "addressRegion": "MG",
       "addressCountry": "BR"
-    },
-    "url": "https://top1nfo-site.vercel.app"
+    }
   }
   </script>
 
   <style>
-    :root{--bg:#030712;--accent:#38bdf8}
-    body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', system-ui, sans-serif; overflow-x: hidden; }
-    .glass-nav{ background: rgba(3,7,18,0.72); backdrop-filter: blur(12px); border-bottom:1px solid rgba(255,255,255,0.04); }
-    .text-gradient{ background: linear-gradient(135deg,#38bdf8 0%, #3b82f6 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-    .text-gradient-white{ background: linear-gradient(180deg,#ffffff 0%, #94a3b8 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
-    .bg-grid{ background-size:40px 40px; background-image:linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px); }
+    :root{--bg:#020617;--accent:#38bdf8}
+    body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    
+    /* Navbar Vidro */
+    .glass-nav{ background: rgba(2, 6, 23, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    
+    /* Efeito de Grade no Fundo */
+    .bg-grid{ background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px); }
+    
+    /* Gradientes de Texto */
+    .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    /* Botão Sofisticado (Principal) */
+    .btn-premium {
+      background: #f8fafc;
+      color: #020617;
+      box-shadow: 0 0 0 0 rgba(56, 189, 248, 0);
+      transition: all 0.3s ease;
+    }
+    .btn-premium:hover {
+      background: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(56, 189, 248, 0.4);
+    }
+
+    /* Botão Sofisticado (Secundário) */
+    .btn-glass {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(4px);
+      transition: all 0.3s ease;
+    }
+    .btn-glass:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(56, 189, 248, 0.5);
+      transform: translateY(-2px);
+    }
   </style>
 </head>
 <body class="antialiased bg-grid relative">
-  
-  <div aria-hidden="true" class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
-  
+
+  <div aria-hidden="true" class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none"></div>
+
   <nav class="fixed w-full z-50 glass-nav">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
-        <i data-lucide="cpu" class="text-sky-400 w-8 h-8"></i>
+      <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2 group">
+        <div class="p-1.5 bg-sky-500/10 rounded-lg border border-sky-500/20 group-hover:border-sky-500/50 transition-all">
+          <i data-lucide="cpu" class="text-sky-400 w-6 h-6"></i>
+        </div>
         <span>TOP<span class="text-sky-400">1</span>NFO</span>
       </a>
 
-      <div class="hidden md:flex gap-8 items-center text-sm font-medium text-slate-300">
+      <div class="hidden md:flex gap-10 items-center text-[13px] uppercase tracking-widest font-semibold text-slate-400">
+        <a href="#" class="text-white hover:text-sky-400 transition-colors">Início</a>
         <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
         <a href="#catalogo" class="hover:text-sky-400 transition-colors">Catálogo</a>
-        <a href="#sobre" class="hover:text-sky-400 transition-colors">A Empresa</a>
+        <a href="#sobre" class="hover:text-sky-400 transition-colors">Empresa</a>
       </div>
 
-      <a href="https://wa.me/5512996005169" target="_blank" class="bg-sky-500 hover:bg-sky-400 text-slate-950 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-sky-500/20">
-        Falar no WhatsApp
+      <a href="https://wa.me/5512996005169" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow-lg shadow-sky-500/20">
+        <i data-lucide="phone" class="w-4 h-4"></i> AGENDAR CONSULTORIA
       </a>
     </div>
   </nav>
 
-  <main class="pt-40 pb-20 px-6 relative z-10">
-    <section class="max-w-5xl mx-auto text-center">
+  <main class="pt-48 pb-32 px-6 relative z-10">
+    <section class="max-w-4xl mx-auto text-center">
       
-      <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-8">
-        <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-        Atendendo Pedra Bonita, Manhuaçu e Região
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-sky-500/20 bg-sky-500/5 text-sky-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-10">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+        </span>
+        Pedra Bonita • Manhuaçu • Região
       </div>
 
-      <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 text-gradient-white leading-tight">
-        A tecnologia que <br /><span class="text-gradient">não deixa você parar.</span>
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-gradient-white leading-[1.1]">
+        Sua infraestrutura de TI <br />sob o olhar de um <span class="text-gradient">especialista.</span>
       </h1>
 
-      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-        Do computador do comércio à infraestrutura da fazenda, além de consultoria corporativa (TOTVS Protheus). Soluções de elite para o seu negócio.
+      <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+        Suporte corporativo para o comércio e tecnologia de precisão para o campo. Experiência internacional em gestão ERP e infraestrutura de alta performance[cite: 80, 134].
       </p>
 
-      <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-        <a href="https://wa.me/5512996005169" target="_blank" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-6 py-3 rounded-xl font-bold hover:bg-white transition-colors flex items-center justify-center gap-2">
-          <i data-lucide="message-circle" class="w-5 h-5"></i>
-          Solicitar Orçamento
+      <div class="flex flex-col sm:flex-row gap-5 justify-center items-center">
+        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-10 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-3">
+          Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
-        <a href="#destaques" class="w-full sm:w-auto px-6 py-3 rounded-xl font-medium border border-slate-700 hover:border-slate-500 transition-colors flex items-center justify-center gap-2">
-          Ver Serviços <i data-lucide="chevron-down" class="w-4 h-4"></i>
+        <a href="#catalogo" class="btn-glass w-full sm:w-auto px-10 py-4 rounded-full font-bold text-sm text-white flex items-center justify-center gap-3">
+          Conhecer Serviços
         </a>
       </div>
       
