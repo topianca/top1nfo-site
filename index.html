@@ -4,19 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top1nfo | Soluções em Tecnologia – Pedra Bonita, MG</title>
-  <meta name="description" content="Manutenção de computadores, redes rurais, câmeras e soluções IoT em Pedra Bonita e região. Orçamento rápido pelo WhatsApp." />
-  <meta name="keywords" content="técnico informática pedra bonita, internet rural, manutenção pc, câmeras, top1nfo" />
+  <meta name="description" content="Manutenção de computadores, redes rurais, câmeras, criação de sistemas, aulas de informática e assessoria digital em Pedra Bonita e região." />
+  <meta name="keywords" content="técnico informática pedra bonita, internet rural, manutenção pc, câmeras, criação de sistemas, aulas de informática, licitações, top1nfo" />
   <meta name="author" content="Thiago Pianca" />
   <link rel="canonical" href="https://top1nfo.com.br" />
 
-  <!-- Preload e pré-conexão para melhor performance -->
+  <!-- Fontes e Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/lucide@latest"></script>
 
-  <!-- JSON-LD para SEO LocalBusiness (dados reais) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -33,53 +33,35 @@
       "postalCode": "35364-000",
       "addressCountry": "BR"
     },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -20.521,
-      "longitude": -42.330
-    },
     "url": "https://top1nfo.com.br",
     "priceRange": "R$",
-    "description": "Manutenção de computadores, internet rural, automação e suporte para empresas e produtores.",
-    "openingHours": "Mo-Fr 08:00-18:00",
-    "sameAs": [
-      "https://www.instagram.com/top1nfo",
-      "https://www.facebook.com/top1nfo"
-    ]
+    "description": "Soluções em tecnologia: manutenção, redes, sistemas sob medida, aulas e assessoria digital.",
+    "openingHours": "Mo-Fr 08:00-18:00"
   }
   </script>
 
   <style>
-    :root{--bg:#030712;--muted:#94a3b8;--accent:#38bdf8}
-    body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', system-ui, sans-serif; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+    :root{--bg:#030712;--accent:#38bdf8}
+    body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', system-ui, sans-serif; overflow-x: hidden; }
     .glass-nav{ background: rgba(3,7,18,0.72); backdrop-filter: blur(12px); border-bottom:1px solid rgba(255,255,255,0.04); }
     .card-tech{ background: linear-gradient(145deg, rgba(30,41,59,0.36) 0%, rgba(15,23,42,0.36) 100%); border:1px solid rgba(255,255,255,0.04); transition:all .28s ease; }
     .card-tech:hover{ border-color: rgba(56,189,248,0.34); transform:translateY(-6px); box-shadow:0 14px 30px -14px rgba(56,189,248,0.12); }
     .text-gradient{ background: linear-gradient(135deg,#38bdf8 0%, #3b82f6 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
     .text-gradient-white{ background: linear-gradient(180deg,#ffffff 0%, #94a3b8 100%); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
     .bg-grid{ background-size:40px 40px; background-image:linear-gradient(to right, rgba(255,255,255,0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.02) 1px, transparent 1px); }
-    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-    a:focus{ outline:2px dashed var(--accent); outline-offset:4px; }
-    /* Menu mobile */
     #primaryNav:not(.hidden) { display: flex; flex-direction: column; gap: 1.5rem; position: absolute; top: 80px; left: 0; right: 0; background: rgba(3,7,18,0.95); backdrop-filter: blur(10px); padding: 1.5rem; border-bottom: 1px solid #1e293b; z-index: 40; }
-    /* FAB WhatsApp fixo */
     .fab{ position:fixed; right:18px; bottom:18px; z-index:80; border-radius:999px; box-shadow:0 10px 30px rgba(56,189,248,0.18); transition: transform 0.2s; }
     .fab:hover{ transform:scale(1.05); }
-    /* Back to top */
-    #backTop{ position: fixed; right:18px; bottom:92px; z-index:70; display:none; border-radius:999px; width:44px; height:44px; background:#1e293b; color:#94a3b8; border:none; cursor:pointer; transition:all 0.2s; }
+    #backTop{ position: fixed; right:18px; bottom:92px; z-index:70; display:none; border-radius:999px; width:44px; height:44px; background:#1e293b; color:#94a3b8; border:none; cursor:pointer; }
     #backTop:hover{ background:#334155; color:#fff; }
-    @media (prefers-reduced-motion:reduce){ *{transition:none!important} }
+    a:focus{ outline:2px dashed var(--accent); outline-offset:4px; }
+    .sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; }
   </style>
 </head>
 <body class="antialiased bg-grid relative">
-
-  <!-- Skip link para acessibilidade -->
   <a class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:bg-slate-900 focus:px-3 focus:py-2 rounded z-50" href="#main">Pular para conteúdo</a>
-
-  <!-- Efeito de glow de fundo -->
   <div aria-hidden="true" class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
-
-  <!-- Navegação fixa -->
+  <!-- Navegação -->
   <nav class="fixed w-full z-50 glass-nav" aria-label="Principal">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2" aria-label="Top1nfo - Página inicial">
@@ -87,27 +69,24 @@
         <span>TOP<span class="text-sky-400">1</span>NFO</span>
       </a>
 
-      <!-- Botão hamburger mobile -->
       <button id="menuBtn" class="md:hidden text-slate-300 p-2" aria-expanded="false" aria-label="Menu" aria-controls="primaryNav">
         <i data-lucide="menu" class="w-6 h-6"></i>
       </button>
 
-      <!-- Menu desktop / mobile -->
-      <div id="primaryNav" class="hidden md:flex md:gap-8 md:items-center md:static md:bg-transparent md:backdrop-filter-none md:p-0 md:border-0" role="navigation" aria-label="Links rápidos">
+      <div id="primaryNav" class="hidden md:flex md:gap-8 md:items-center md:static md:bg-transparent md:backdrop-filter-none md:p-0 md:border-0" role="navigation">
         <a href="#destaques" class="hover:text-sky-400 transition-colors py-2 md:py-0">Destaques</a>
         <a href="#catalogo" class="hover:text-sky-400 transition-colors py-2 md:py-0">Catálogo</a>
         <a href="#sobre" class="hover:text-sky-400 transition-colors py-2 md:py-0">A Empresa</a>
         <a href="#contato" class="md:hidden bg-sky-500 text-slate-950 px-4 py-2 rounded-lg text-center font-bold mt-2">WhatsApp</a>
       </div>
 
-      <!-- Botão WhatsApp desktop -->
       <a href="https://wa.me/5512996005169" target="_blank" rel="noopener" class="hidden sm:inline-block bg-sky-500 hover:bg-sky-400 text-slate-950 px-5 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-sky-500/20">Falar no WhatsApp</a>
     </div>
   </nav>
 
   <main id="main" class="pt-40 pb-20 px-6 relative z-10">
 
-    <!-- Seção Hero -->
+    <!-- HERO -->
     <section class="max-w-5xl mx-auto text-center">
       <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-8">
         <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
@@ -133,7 +112,7 @@
       </div>
     </section>
 
-    <!-- Cards de destaque -->
+    <!-- DESTAQUES (cards) -->
     <section id="destaques" class="py-16 px-6">
       <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
         <div class="card-tech p-7 rounded-2xl flex flex-col items-center text-center">
@@ -160,7 +139,7 @@
       </div>
     </section>
 
-    <!-- Selos de confiança -->
+    <!-- BADGES DE CONFIANÇA -->
     <section class="max-w-5xl mx-auto py-6">
       <div class="flex flex-wrap gap-3 justify-center text-sm text-slate-400">
         <span class="bg-slate-800 px-3 py-1 rounded-full">+12 anos de experiência</span>
@@ -169,8 +148,7 @@
         <span class="bg-slate-800 px-3 py-1 rounded-full">Suporte remoto e presencial</span>
       </div>
     </section>
-
-    <!-- Catálogo de Serviços (completo) -->
+    <!-- CATÁLOGO DE SERVIÇOS -->
     <section id="catalogo" class="py-16 px-6 border-t border-slate-800/40">
       <div class="max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo Completo</h2>
@@ -186,27 +164,27 @@
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Limpeza e Otimização de PC</strong><p class="text-slate-400 text-xs">Formatação, remoção de malware, backup, atualização de drivers.</p></div>
+                  <div><span class="text-white font-medium">Limpeza e Otimização de PC</span> <span class="text-slate-400 text-xs block">Formatação, remoção de malware, backup, atualização de drivers.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Limpeza%20e%20Otimização%20de%20PC" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Upgrade de Máquina (SSD / RAM / GPU)</strong><p class="text-slate-400 text-xs">Instalação de SSD, clonagem, expansão de memória, troca de pasta térmica.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Upgrade%20de%20Máquina%20(SSD%20/%20RAM)" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Upgrade de Máquina (SSD / RAM / GPU)</span> <span class="text-slate-400 text-xs block">Instalação de SSD, clonagem, expansão de memória, troca de pasta térmica.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Upgrade%20de%20Máquina" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Montagem de PC Gamer / Edição</strong><p class="text-slate-400 text-xs">Consultoria de peças, montagem, overclock básico e testes de benchmark.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Montagem%20de%20PC%20Gamer%20/%20Edição" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Montagem de PC Gamer / Edição</span> <span class="text-slate-400 text-xs block">Consultoria de peças, montagem, overclock básico e testes de benchmark.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Montagem%20de%20PC%20Gamer" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Instalação de Linux / SO leve</strong><p class="text-slate-400 text-xs">Distribuições otimizadas (CachyOS, Ubuntu) para máximo desempenho.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Instalação%20de%20Linux%20Customizado" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Instalação de Linux / SO leve</span> <span class="text-slate-400 text-xs block">Distribuições otimizadas (CachyOS, Ubuntu) para máximo desempenho.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Instalação%20de%20Linux" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Recuperação de Dados</strong><p class="text-slate-400 text-xs">Recuperação de arquivos deletados ou mídia corrompida (HD, SSD, pendrive).</p></div>
+                  <div><span class="text-white font-medium">Recuperação de Dados</span> <span class="text-slate-400 text-xs block">Recuperação de arquivos deletados ou mídia corrompida (HD, SSD, pendrive).</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Recuperação%20de%20Dados" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Manutenção de Impressoras</strong><p class="text-slate-400 text-xs">Limpeza de cabeçotes, desentupimento, substituição de toner.</p></div>
+                  <div><span class="text-white font-medium">Manutenção de Impressoras</span> <span class="text-slate-400 text-xs block">Limpeza de cabeçotes, desentupimento, substituição de toner.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Manutenção%20de%20Impressora" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
               </ul>
@@ -222,23 +200,23 @@
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Expansão de Sinal Wi-Fi</strong><p class="text-slate-400 text-xs">Access points, mesh, repetidores – internet em toda a casa.</p></div>
+                  <div><span class="text-white font-medium">Expansão de Sinal Wi-Fi</span> <span class="text-slate-400 text-xs block">Access points, mesh, repetidores – internet em toda a casa.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Expansão%20de%20Sinal%20Wi-Fi" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Cabeamento Estruturado</strong><p class="text-slate-400 text-xs">Passagem de cabos CAT5e/CAT6, tomadas, identificação.</p></div>
+                  <div><span class="text-white font-medium">Cabeamento Estruturado</span> <span class="text-slate-400 text-xs block">Passagem de cabos CAT5e/CAT6, tomadas, identificação.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Cabeamento%20Estruturado" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Diagnóstico de Link Rural</strong><p class="text-slate-400 text-xs">Análise de operadoras, instalação de antenas 4G/5G, rádio ponto-a-ponto.</p></div>
+                  <div><span class="text-white font-medium">Diagnóstico de Link Rural</span> <span class="text-slate-400 text-xs block">Análise de operadoras, instalação de antenas 4G/5G, rádio ponto-a-ponto.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Diagnóstico%20de%20Link%20Rural" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Backup em Nuvem</strong><p class="text-slate-400 text-xs">Rotinas automáticas para escritórios (Google Drive, OneDrive, Samba).</p></div>
+                  <div><span class="text-white font-medium">Backup em Nuvem</span> <span class="text-slate-400 text-xs block">Rotinas automáticas para escritórios (Google Drive, OneDrive, Samba).</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Backup%20em%20Nuvem" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Link Rádio Ponto-a-Ponto</strong><p class="text-slate-400 text-xs">Conecte dois prédios ou fazendas sem cabos.</p></div>
+                  <div><span class="text-white font-medium">Link Rádio Ponto-a-Ponto</span> <span class="text-slate-400 text-xs block">Conecte dois prédios ou fazendas sem cabos.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Link%20Rádio%20Ponto-a-Ponto" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
               </ul>
@@ -254,38 +232,38 @@
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Monitoramento de Secador de Café</strong><p class="text-slate-400 text-xs">Sensores de temperatura/umidade com alertas no celular.</p></div>
+                  <div><span class="text-white font-medium">Monitoramento de Secador de Café</span> <span class="text-slate-400 text-xs block">Sensores de temperatura/umidade com alertas no celular.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Monitoramento%20de%20Secador%20de%20Café" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Estação Meteorológica Rural</strong><p class="text-slate-400 text-xs">Dados climáticos em tempo real, histórico e alertas.</p></div>
+                  <div><span class="text-white font-medium">Estação Meteorológica Rural</span> <span class="text-slate-400 text-xs block">Dados climáticos em tempo real, histórico e alertas.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Estação%20Meteorológica%20Rural" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Irrigação Inteligente</strong><p class="text-slate-400 text-xs">Sensores de umidade do solo, acionamento remoto da bomba.</p></div>
+                  <div><span class="text-white font-medium">Irrigação Inteligente</span> <span class="text-slate-400 text-xs block">Sensores de umidade do solo, acionamento remoto da bomba.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Irrigação%20Inteligente" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Rastreamento GPS para Maquinário</strong><p class="text-slate-400 text-xs">Módulo oculto, painel web, histórico de rotas.</p></div>
+                  <div><span class="text-white font-medium">Rastreamento GPS para Maquinário</span> <span class="text-slate-400 text-xs block">Módulo oculto, painel web, histórico de rotas.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Rastreamento%20GPS%20para%20Maquinário" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Cerca Elétrica Inteligente</strong><p class="text-slate-400 text-xs">Alerta no celular se a cerca for arriada.</p></div>
+                  <div><span class="text-white font-medium">Cerca Elétrica Inteligente</span> <span class="text-slate-400 text-xs block">Alerta no celular se a cerca for arriada.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Cerca%20Elétrica%20Inteligente" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Mapeamento com Drone (NDVI)</strong><p class="text-slate-400 text-xs">Mapas de saúde da lavoura, pragas, estresse hídrico.</p></div>
+                  <div><span class="text-white font-medium">Mapeamento com Drone (NDVI)</span> <span class="text-slate-400 text-xs block">Mapas de saúde da lavoura, pragas, estresse hídrico.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Mapeamento%20com%20Drone" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Eficiência Energética na Fazenda</strong><p class="text-slate-400 text-xs">Medidores de consumo e dashboard para economizar.</p></div>
+                  <div><span class="text-white font-medium">Eficiência Energética na Fazenda</span> <span class="text-slate-400 text-xs block">Medidores de consumo e dashboard para economizar.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Eficiência%20Energética%20na%20Fazenda" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
               </ul>
             </div>
           </details>
 
-          <!-- 4. Design e Presença Digital -->
+          <!-- 4. Design, Marketing e Web -->
           <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
             <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
               <div class="flex items-center gap-3"><i data-lucide="palette" class="text-sky-400 w-5 h-5"></i> 4. Design, Marketing e Web</div>
@@ -294,96 +272,83 @@
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Logotipo e Identidade Visual</strong><p class="text-slate-400 text-xs">Criação de marca profissional, paleta de cores, vetorização.</p></div>
+                  <div><span class="text-white font-medium">Logotipo e Identidade Visual</span> <span class="text-slate-400 text-xs block">Criação de marca profissional, paleta de cores, vetorização.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Logotipo%20e%20Identidade%20Visual" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Google Meu Negócio</strong><p class="text-slate-400 text-xs">Apareça no mapa do Google, fotos, horários, avaliações.</p></div>
+                  <div><span class="text-white font-medium">Google Meu Negócio</span> <span class="text-slate-400 text-xs block">Apareça no mapa do Google, fotos, horários, avaliações.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Google%20Meu%20Negócio" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Cartão Digital / Link na Bio</strong><p class="text-slate-400 text-xs">Mini-página com catálogo e botões de contato.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Cartão%20Digital%20/%20Link%20na%20Bio" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Cartão Digital / Link na Bio</span> <span class="text-slate-400 text-xs block">Mini-página com catálogo e botões de contato.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Cartão%20Digital" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Site / Loja Virtual</strong><p class="text-slate-400 text-xs">Landing page, e-commerce, registro de domínio.</p></div>
+                  <div><span class="text-white font-medium">Site / Loja Virtual</span> <span class="text-slate-400 text-xs block">Landing page, e-commerce, registro de domínio.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Site%20/%20Loja%20Virtual" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Fotografia de Produto</strong><p class="text-slate-400 text-xs">Sessão de fotos profissionais para catálogo e WhatsApp.</p></div>
+                  <div><span class="text-white font-medium">Fotografia de Produto</span> <span class="text-slate-400 text-xs block">Sessão de fotos profissionais para catálogo e WhatsApp.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Fotografia%20de%20Produto" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Edição de Vídeo</strong><p class="text-slate-400 text-xs">Cortes, legendas, tratamento de áudio para YouTube/Reels.</p></div>
+                  <div><span class="text-white font-medium">Edição de Vídeo</span> <span class="text-slate-400 text-xs block">Cortes, legendas, tratamento de áudio para YouTube/Reels.</span></div>
                   <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Edição%20de%20Vídeo" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
                 </li>
               </ul>
             </div>
           </details>
-
-          <!-- 5. Automação e Atendimento -->
-          <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
+          <!-- 10. Assessoria Digital para Pessoas e Empresas (NOVO) -->
+          <details class="group bg-slate-900/50 border border-teal-900/50 rounded-xl overflow-hidden">
             <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-              <div class="flex items-center gap-3"><i data-lucide="bot" class="text-sky-400 w-5 h-5"></i> 5. IA e Automação</div>
+              <div class="flex items-center gap-3"><i data-lucide="briefcase" class="text-teal-400 w-5 h-5"></i> <span class="text-teal-400">10. Assessoria Digital</span></div>
               <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
             </summary>
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Robô de WhatsApp (Chatbot)</strong><p class="text-slate-400 text-xs">Atendimento automático 24h, cardápio, respostas rápidas.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Robô%20de%20WhatsApp" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Apoio em Licitações</span> <span class="text-slate-400 text-xs block">Pesquisa de preços, cadastro em portais, preparação de documentos digitais.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Apoio%20em%20Licitações" class="text-teal-400 text-xs hover:text-teal-300 bg-teal-500/10 px-3 py-1.5 rounded-md border border-teal-500/20">Consultar</a>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                  <div><span class="text-white font-medium">Assessoria para Compras Online</span> <span class="text-slate-400 text-xs block">Cotação, negociação, pagamento seguro – para empresas e pessoas.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Assessoria%20em%20Compras%20Online" class="text-teal-400 text-xs hover:text-teal-300 bg-teal-500/10 px-3 py-1.5 rounded-md border border-teal-500/20">Consultar</a>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                  <div><span class="text-white font-medium">Regularização Digital</span> <span class="text-slate-400 text-xs block">Certificado digital, nota fiscal eletrônica, gov.br, INSS.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Regularização%20Digital" class="text-teal-400 text-xs hover:text-teal-300 bg-teal-500/10 px-3 py-1.5 rounded-md border border-teal-500/20">Consultar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Automação low-code</strong><p class="text-slate-400 text-xs">Integração de planilhas, ERP e WhatsApp com Make/Node-RED.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Automação%20low-code" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20">Orçar</a>
+                  <div><span class="text-white font-medium">Compra/Venda de Veículos/Imóveis Online</span> <span class="text-slate-400 text-xs block">Orientação para negociações seguras pela internet.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Assessoria%20em%20Compra%20e%20Venda%20Online" class="text-teal-400 text-xs hover:text-teal-300 bg-teal-500/10 px-3 py-1.5 rounded-md border border-teal-500/20">Consultar</a>
                 </li>
               </ul>
             </div>
           </details>
 
-          <!-- 6. TOTVS Protheus (destaque) -->
-          <details class="group bg-slate-900/50 border border-indigo-900/50 rounded-xl overflow-hidden">
+          <!-- 11. Serviços Avançados de TI (NOVO) -->
+          <details class="group bg-slate-900/50 border border-rose-900/50 rounded-xl overflow-hidden">
             <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-              <div class="flex items-center gap-3"><i data-lucide="database" class="text-indigo-400 w-5 h-5"></i> <span class="text-indigo-400">6. Consultoria TOTVS Protheus</span></div>
+              <div class="flex items-center gap-3"><i data-lucide="cloud" class="text-rose-400 w-5 h-5"></i> <span class="text-rose-400">11. Serviços Avançados de TI</span></div>
               <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
             </summary>
             <div class="p-5 pt-0 border-t border-slate-800">
               <ul class="space-y-3 text-sm mt-3">
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Implantação e Suporte Protheus</strong><p class="text-slate-400 text-xs">Módulos: Faturamento, Estoque, Compras, Financeiro.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Implantação%20Protheus" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-3 py-1.5 rounded-md border border-indigo-500/20">Consultar</a>
+                  <div><span class="text-white font-medium">Nuvem Privada</span> <span class="text-slate-400 text-xs block">Criação e gestão de infraestrutura em nuvem para empresas.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Nuvem%20Privada" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-3 py-1.5 rounded-md border border-rose-500/20">Consultar</a>
                 </li>
                 <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Customização ADVPL</strong><p class="text-slate-400 text-xs">Programação de relatórios, ajustes no sistema.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Customização%20ADVPL" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-3 py-1.5 rounded-md border border-indigo-500/20">Consultar</a>
+                  <div><span class="text-white font-medium">Servidores e Virtualização</span> <span class="text-slate-400 text-xs block">Proxmox, VMware, configuração de servidores dedicados.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Servidores%20e%20Virtualização" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-3 py-1.5 rounded-md border border-rose-500/20">Consultar</a>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                  <div><span class="text-white font-medium">Backup Empresarial com DR</span> <span class="text-slate-400 text-xs block">Soluções de recuperação de desastres para dados críticos.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Backup%20Empresarial" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-3 py-1.5 rounded-md border border-rose-500/20">Consultar</a>
                 </li>
                 <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Migração e Infraestrutura</strong><p class="text-slate-400 text-xs">Atualização de versão, T-Cloud, WebServices.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Migração%20Protheus" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-3 py-1.5 rounded-md border border-indigo-500/20">Consultar</a>
-                </li>
-              </ul>
-            </div>
-          </details>
-
-          <!-- 7. Contratos Mensais (Recorrentes) -->
-          <details class="group bg-slate-900/50 border border-emerald-900/50 rounded-xl overflow-hidden">
-            <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-              <div class="flex items-center gap-3"><i data-lucide="shield" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">7. Contratos Mensais (Empresas)</span></div>
-              <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-            </summary>
-            <div class="p-5 pt-0 border-t border-slate-800">
-              <ul class="space-y-3 text-sm mt-3">
-                <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Assinatura de TI (SLA)</strong><p class="text-slate-400 text-xs">Atendimento prioritário, manutenções preventivas.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20informações%20sobre%20Assinatura%20de%20TI%20(SLA)" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20">Assinar</a>
-                </li>
-                <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                  <div><strong class="text-white">Backup Gerenciado (DRaaS)</strong><p class="text-slate-400 text-xs">Backup automático na nuvem com recuperação rápida.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20informações%20sobre%20Backup%20Gerenciado" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20">Assinar</a>
-                </li>
-                <li class="flex justify-between items-center">
-                  <div><strong class="text-white">Segurança da Informação (MDR)</strong><p class="text-slate-400 text-xs">Monitoramento 24/7 contra ameaças e ataques.</p></div>
-                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20informações%20sobre%20Segurança%20da%20Informação" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20">Assinar</a>
+                  <div><span class="text-white font-medium">Consultoria LGPD e Segurança</span> <span class="text-slate-400 text-xs block">Adequação à Lei Geral de Proteção de Dados e políticas de segurança.</span></div>
+                  <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Consultoria%20LGPD" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-3 py-1.5 rounded-md border border-rose-500/20">Consultar</a>
                 </li>
               </ul>
             </div>
@@ -392,28 +357,28 @@
       </div>
     </section>
 
-    <!-- Depoimentos (reais) -->
+    <!-- DEPOIMENTOS (sem nomes) -->
     <section id="depoimentos" class="py-16 px-6">
       <div class="max-w-4xl mx-auto text-center">
         <h3 class="text-2xl md:text-3xl font-bold mb-8">O que clientes da região dizem</h3>
         <div class="grid md:grid-cols-3 gap-5">
           <blockquote class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl text-left">
             <p class="text-slate-200">"O Thiago resolveu nossa internet no sítio. Ninguém mais conseguiu."</p>
-            <footer class="mt-3 text-slate-400 text-xs">— João, Produtor Rural (Pedra Bonita)</footer>
+            <footer class="mt-3 text-slate-400 text-xs">— Produtor Rural, Pedra Bonita</footer>
           </blockquote>
           <blockquote class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl text-left">
             <p class="text-slate-200">"Melhorou o PDV da minha loja; vendemos mais no primeiro mês."</p>
-            <footer class="mt-3 text-slate-400 text-xs">— Maria, Comércio Local (Manhuaçu)</footer>
+            <footer class="mt-3 text-slate-400 text-xs">— Comércio Local, Manhuaçu</footer>
           </blockquote>
           <blockquote class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl text-left">
             <p class="text-slate-200">"Transmissão da missa impecável – agradecemos!"</p>
-            <footer class="mt-3 text-slate-400 text-xs">— Padre Carlos, Igreja Matriz</footer>
+            <footer class="mt-3 text-slate-400 text-xs">— Igreja Matriz, Pedra Bonita</footer>
           </blockquote>
         </div>
       </div>
     </section>
 
-    <!-- Sobre a empresa (com autoridade) -->
+    <!-- SOBRE -->
     <section id="sobre" class="py-16 px-6">
       <div class="max-w-5xl mx-auto card-tech p-8 md:p-12 rounded-3xl border border-slate-800">
         <div class="md:flex gap-10 items-center">
@@ -422,11 +387,11 @@
             <p class="text-slate-400 mb-4 leading-relaxed">
               Profissional com atuação em infraestrutura corporativa e TOTVS Protheus desde 2011. Experiência internacional (Suíça e Espanha) e foco em atender empresas, produtores rurais e comércio local com soluções que realmente funcionam.
             </p>
-            <ul class="text-sm text-slate-400 space-y-2 mb-6">
-              <li class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Implantação e suporte Protheus (Faturamento, Estoque, Compras, Financeiro)</li>
-              <li class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Serviços de campo: antenas, CFTV, sensores IoT, cabeamento estruturado</li>
-              <li class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Treinamentos e contratos mensais (SLA) para empresas</li>
-            </ul>
+            <div class="space-y-2 text-sm text-slate-400 mb-6">
+              <div class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Implantação e suporte Protheus (Faturamento, Estoque, Compras, Financeiro)</div>
+              <div class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Serviços de campo: antenas, CFTV, sensores IoT, cabeamento estruturado</div>
+              <div class="flex items-start gap-2"><i data-lucide="check-circle" class="text-emerald-400 w-5 h-5 shrink-0"></i> Treinamentos e contratos mensais (SLA) para empresas</div>
+            </div>
             <a href="https://wa.me/5512996005169" class="inline-flex items-center gap-2 bg-sky-500 text-slate-950 px-5 py-3 rounded-xl font-bold hover:bg-sky-400 transition-colors shadow-lg shadow-sky-500/20">
               <i data-lucide="message-circle" class="w-5 h-5"></i> Chamar no WhatsApp
             </a>
@@ -441,32 +406,28 @@
     </section>
   </main>
 
-  <!-- WhatsApp FAB (flutuante) -->
+  <!-- WhatsApp FAB -->
   <a href="https://wa.me/5512996005169" target="_blank" rel="noopener" class="fab bg-green-500 p-4" aria-label="WhatsApp">
     <i data-lucide="message-circle" class="w-6 h-6 text-white"></i>
   </a>
 
-  <!-- Botão voltar ao topo -->
+  <!-- Back to top -->
   <button id="backTop" aria-label="Voltar ao topo">
     <i data-lucide="arrow-up" class="w-5 h-5"></i>
   </button>
 
-  <!-- Footer -->
   <footer class="py-10 border-t border-slate-800/60 text-slate-500">
     <div class="max-w-7xl mx-auto px-6 text-center">
       <div class="text-xl font-bold text-white mb-2 flex items-center justify-center gap-2">
-        <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i>
-        TOP<span class="text-sky-400">1</span>NFO
+        <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> TOP<span class="text-sky-400">1</span>NFO
       </div>
       <p class="mb-2">Tecnologia, design e infraestrutura — atendimento em Pedra Bonita, Manhuaçu e região.</p>
-      <p class="text-xs">&copy; 2026 Top1nfo. Liderado por Thiago Pianca. Todos os direitos reservados.</p>
+      <p class="text-xs">&copy; 2026 Top1nfo. Todos os direitos reservados.</p>
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script>
     (function() {
-      // Menu mobile
       const menuBtn = document.getElementById('menuBtn');
       const nav = document.getElementById('primaryNav');
       if (menuBtn && nav) {
@@ -475,7 +436,6 @@
           menuBtn.setAttribute('aria-expanded', String(!expanded));
           nav.classList.toggle('hidden');
         });
-        // Fechar menu ao clicar em um link (mobile)
         nav.querySelectorAll('a').forEach(link => {
           link.addEventListener('click', () => {
             if (!nav.classList.contains('hidden')) {
@@ -485,8 +445,6 @@
           });
         });
       }
-
-      // Back to top
       const backTop = document.getElementById('backTop');
       if (backTop) {
         window.addEventListener('scroll', () => {
@@ -496,8 +454,6 @@
           window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
-
-      // Inicializar ícones Lucide (caso não tenha carregado com defer)
       if (window.lucide && lucide.createIcons) {
         lucide.createIcons();
       } else {
@@ -507,7 +463,5 @@
       }
     })();
   </script>
-  <!-- Fallback para caso Lucide não carregue -->
-  <script>if(!window.lucide){document.querySelectorAll('[data-lucide]').forEach(el=>{el.innerHTML='...'})}</script>
 </body>
 </html>
