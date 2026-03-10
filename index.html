@@ -18,6 +18,9 @@
         .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
         .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+        
+        /* Ocultar a seta padrão do details no Safari/Chrome */
+        details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
 <body class="antialiased bg-grid relative">
@@ -31,215 +34,223 @@
                 <span>TOP<span class="text-sky-400">1</span>NFO</span>
             </div>
             <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
-                <a href="#servicos" class="hover:text-sky-400 transition-colors">Catálogo</a>
+                <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
+                <a href="#catalogo" class="hover:text-sky-400 transition-colors">Catálogo Completo</a>
                 <a href="#sobre" class="hover:text-sky-400 transition-colors">A Empresa</a>
             </div>
             <a href="https://wa.me/5512996005169" target="_blank" class="bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]">
-                WhatsApp
+                Falar no WhatsApp
             </a>
         </div>
     </nav>
 
-    <section class="pt-40 pb-24 px-6 relative z-10">
+    <section class="pt-40 pb-20 px-6 relative z-10">
         <div class="max-w-5xl mx-auto text-center">
             <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-8">
                 <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
-                Cobertura: Pedra Bonita, Manhuaçu e Região
+                Atendendo Pedra Bonita, Manhuaçu e Região
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-gradient-white leading-tight">
-                Infraestrutura e Tecnologia <br /> <span class="text-gradient">sem gargalos.</span>
+                A tecnologia que <br /> <span class="text-gradient">facilita o seu trabalho.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-                Hardware de alta performance, redes estruturadas de confiança e automação IoT. Desempenho máximo para o seu negócio e estabilidade para a sua fazenda.
+                Deixamos seus equipamentos rápidos, sua internet estável no sítio ou comércio, e a sua marca profissional no ambiente digital.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="https://wa.me/5512996005169" target="_blank" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-xl font-bold hover:bg-white transition-colors flex items-center justify-center gap-2">
                     <i data-lucide="message-square" class="w-5 h-5"></i> Solicitar Orçamento
                 </a>
-                <a href="#servicos" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium border border-slate-700 hover:border-slate-500 transition-colors flex items-center justify-center gap-2">
-                    Ver Catálogo <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                <a href="#catalogo" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium border border-slate-700 hover:border-slate-500 transition-colors flex items-center justify-center gap-2">
+                    Ver Serviços <i data-lucide="arrow-down" class="w-4 h-4"></i>
                 </a>
             </div>
         </div>
     </section>
 
-    <section id="servicos" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
+    <section id="destaques" class="py-12 px-6 relative z-10">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6">
+            
+            <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
+                    <i data-lucide="monitor-wrench" class="text-sky-400 w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Computador Travando?</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Limpamos, formatamos e instalamos peças novas (SSD) para o seu notebook ou PC ligar em segundos, sem perder seus arquivos.</p>
+            </div>
+
+            <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
+                    <i data-lucide="wifi" class="text-sky-400 w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Internet que não cai</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Seja na roça ou no comércio. Puxamos o sinal Wi-Fi para ficar forte na casa toda e organizamos os cabos para seu sistema não parar.</p>
+            </div>
+
+            <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
+                <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
+                    <i data-lucide="megaphone" class="text-sky-400 w-8 h-8"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Apareça e Venda Mais</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Criamos sua logomarca, artes, cardápio digital e colocamos a sua empresa no mapa do Google para os clientes te acharem rápido.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="catalogo" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo de Soluções</h2>
-                <p class="text-slate-400">Clique nas categorias abaixo para expandir e ver detalhes e valores.</p>
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo Completo</h2>
+                <p class="text-slate-400">Tudo o que a Top1nfo pode fazer pelo seu negócio. Clique para expandir.</p>
             </div>
             
             <div class="space-y-4">
                 
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
                         <div class="flex items-center gap-3"><i data-lucide="wrench" class="text-sky-400 w-5 h-5"></i> 1. Manutenção e Hardware</div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Limpeza e Otimização de PC</strong><p class="text-slate-400 text-xs mt-1">Remoção de malware, limpeza de disco, atualização de drivers, backup prévio.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 180</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Limpeza e Otimização de PC</strong><p class="text-slate-400 text-xs mt-1">Remoção de vírus, limpeza de disco, atualização de drivers.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Upgrade de Máquina (SSD / RAM / GPU)</strong><p class="text-slate-400 text-xs mt-1">Instalação de SSD, clonagem, expansão RAM, testes de stress.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">A partir de R$ 80</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Upgrade de Máquina (SSD / RAM)</strong><p class="text-slate-400 text-xs mt-1">Seu notebook antigo ligando em segundos.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Montagem de PC Gamer / Edição</strong><p class="text-slate-400 text-xs mt-1">Consultoria de peças, montagem, BIOS/OC básico, benchmarks.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 400</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Montagem de PC Gamer / Edição</strong><p class="text-slate-400 text-xs mt-1">Consultoria de peças e montagem profissional.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Instalação de Linux Customizado</strong><p class="text-slate-400 text-xs mt-1">Deploy de distribuição, ajuste de drivers.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 120 – R$ 200</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Recuperação de Dados</strong><p class="text-slate-400 text-xs mt-1">Perdeu fotos ou documentos? Tentamos recuperar para você.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Recuperação de Dados</strong><p class="text-slate-400 text-xs mt-1">Clonagem de disco, software forense.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 2.500</span>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">Manutenção de Impressoras</strong><p class="text-slate-400 text-xs mt-1">Limpeza de cabeçotes e desentupimento.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
                         <div class="flex items-center gap-3"><i data-lucide="network" class="text-sky-400 w-5 h-5"></i> 2. Redes e Infraestrutura</div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Expansão de Sinal Wi-Fi</strong><p class="text-slate-400 text-xs mt-1">Survey, crimpagem, configuração de APs/mesh.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 600</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Expansão de Sinal Wi-Fi</strong><p class="text-slate-400 text-xs mt-1">Puxamos o sinal para ficar forte na casa toda.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Cabeamento Estruturado</strong><p class="text-slate-400 text-xs mt-1">Passagem de cabos, tomadas, crimpagem.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150/pt</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Cabeamento Estruturado</strong><p class="text-slate-400 text-xs mt-1">Passagem de cabos de rede com acabamento profissional.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Link Rural (4G/5G/Rádio)</strong><p class="text-slate-400 text-xs mt-1">Testes de sinal, instalação de antenas.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 2.000</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Link Rural (Rádio/4G)</strong><p class="text-slate-400 text-xs mt-1">Internet caindo no sítio? Instalamos e apontamos antenas.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Backup em Nuvem</strong><p class="text-slate-400 text-xs mt-1">Rotinas automáticas de segurança.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 500</span>
-                            </li>
-                        </ul>
-                    </div>
-                </details>
-
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="sprout" class="text-sky-400 w-5 h-5"></i> 3. Agrotech e IoT (Ouro Local)</div>
-                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                    </summary>
-                    <div class="p-5 pt-0 border-t border-slate-800">
-                        <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Monitoramento de Secador de Café</strong><p class="text-slate-400 text-xs mt-1">Microcontrolador + sensores, dashboard na nuvem.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">A partir R$ 800</span>
-                            </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Irrigação Inteligente</strong><p class="text-slate-400 text-xs mt-1">Probes de umidade, relés para bombas, app.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 2.500</span>
-                            </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Rastreamento GPS Maquinário</strong><p class="text-slate-400 text-xs mt-1">Módulo oculto em tratores com painel web.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 400</span>
-                            </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Mapeamento por Drone</strong><p class="text-slate-400 text-xs mt-1">Voo programado, mapas NDVI.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 300/voo</span>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">Backup em Nuvem</strong><p class="text-slate-400 text-xs mt-1">Configuramos um cofre digital automático para seus arquivos.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="hard-hat" class="text-sky-400 w-5 h-5"></i> 4. Projetos e Instalações em Obras</div>
+                        <div class="flex items-center gap-3"><i data-lucide="palette" class="text-sky-400 w-5 h-5"></i> 3. Design, Marketing e Web</div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Automação na Planta</strong><p class="text-slate-400 text-xs mt-1">Projeto de pontos, passagem de conduítes pré-reboco.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 800</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Logotipo e Identidade Visual</strong><p class="text-slate-400 text-xs mt-1">Criamos uma marca profissional e moderna para a sua empresa.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Câmeras IP e Monitoramento</strong><p class="text-slate-400 text-xs mt-1">Instalação de câmeras, NVR/cloud.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 100/câm.</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Google Meu Negócio</strong><p class="text-slate-400 text-xs mt-1">Apareça no mapa do Google quando pesquisarem seus serviços.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Catálogo Digital e Link na Bio</strong><p class="text-slate-400 text-xs mt-1">Menu para clientes acessarem do celular com botão para WhatsApp.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
+                            </li>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Site ou Loja Virtual</strong><p class="text-slate-400 text-xs mt-1">Sua vitrine online completa para mostrar produtos e vender 24h.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
+                            </li>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">Design Geral e Vídeos</strong><p class="text-slate-400 text-xs mt-1">Fotografia de produtos, artes para Instagram e edição de Reels.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="globe" class="text-sky-400 w-5 h-5"></i> 5. Presença Digital e E-commerce</div>
+                        <div class="flex items-center gap-3"><i data-lucide="hard-hat" class="text-sky-400 w-5 h-5"></i> 4. Instalações e Obras</div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Google Meu Negócio</strong><p class="text-slate-400 text-xs mt-1">Setup completo, SEO local, fotos.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 350</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Câmeras e Monitoramento</strong><p class="text-slate-400 text-xs mt-1">Vigie sua casa ou obra pelo celular.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Site / Loja Virtual</strong><p class="text-slate-400 text-xs mt-1">Registro de domínio, hospedagem, pagamento.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 600 – R$ 3.000</span>
-                            </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Implantação de ERP</strong><p class="text-slate-400 text-xs mt-1">Parametrização e treinamento de sistemas de gestão.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">A partir R$ 400</span>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">Infraestrutura na Planta</strong><p class="text-slate-400 text-xs mt-1">Projeto de pontos de rede e câmeras antes do reboco.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="bot" class="text-sky-400 w-5 h-5"></i> 6. IA, Automação e Atendimento</div>
+                        <div class="flex items-center gap-3"><i data-lucide="bot" class="text-sky-400 w-5 h-5"></i> 5. Automação de Atendimento</div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Robô de WhatsApp</strong><p class="text-slate-400 text-xs mt-1">Seu WhatsApp responde sozinho 24h.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 400 + mens.</span>
-                            </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Automação Low-code</strong><p class="text-slate-400 text-xs mt-1">Integrações de sistemas via webhooks.</p></div>
-                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.200</span>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">Robô de WhatsApp</strong><p class="text-slate-400 text-xs mt-1">Configure menus e deixe seu WhatsApp respondendo clientes 24h.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-3 py-1.5 rounded-md border border-sky-500/20 whitespace-nowrap">Orçar Serviço</a>
                             </li>
                         </ul>
                     </div>
                 </details>
 
-                <details class="group bg-slate-900/50 border border-emerald-900/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                <details class="group bg-slate-900/50 border border-emerald-900/50 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="dollar-sign" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">Serviços de Alta Margem (Contratos)</span></div>
+                        <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">6. Contratos e Suporte Mensal (Empresas)</span></div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
                         <ul class="space-y-3 text-sm mt-3">
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Monitoramento IoT (Agro)</strong><p class="text-slate-400 text-xs mt-1">Sensores + dashboard + alertas.</p></div>
-                                <span class="text-emerald-400 font-mono text-xs">R$ 79 – R$ 299/mês</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Assinatura de TI (SLA)</strong><p class="text-slate-400 text-xs mt-1">Seu comércio não pode parar. Atendimento de TI prioritário.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">MDR (Segurança 24/7)</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ameaças.</p></div>
-                                <span class="text-emerald-400 font-mono text-xs">R$ 200 – R$ 800/mês</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Backup Gerenciado</strong><p class="text-slate-400 text-xs mt-1">Cópia de segurança diária do sistema da sua loja.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
-                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Mini-ISP Rural</strong><p class="text-slate-400 text-xs mt-1">Link dedicado para sítios.</p></div>
-                                <span class="text-emerald-400 font-mono text-xs">R$ 400 + R$ 79/mês</span>
+                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Mini-ISP Rural</strong><p class="text-slate-400 text-xs mt-1">Gerenciamento e link dedicado contínuo para sítios.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
-                            <li class="flex justify-between items-start">
-                                <div><strong class="text-white">Assinatura de Segurança (SLA)</strong><p class="text-slate-400 text-xs mt-1">Suporte e atendimento prioritário em TI.</p></div>
-                                <span class="text-emerald-400 font-mono text-xs">R$ 99 – R$ 499/mês</span>
+                            <li class="flex justify-between items-center">
+                                <div><strong class="text-white">MDR (Segurança 24/7)</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ataques hackers e vírus de sequestro de dados.</p></div>
+                                <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
                         </ul>
                     </div>
@@ -252,13 +263,16 @@
     <section id="sobre" class="py-24 px-6 relative z-10">
         <div class="max-w-5xl mx-auto card-tech p-10 md:p-14 rounded-3xl border border-slate-800 flex flex-col md:flex-row gap-12 items-center">
             <div class="flex-1">
-                <h2 class="text-3xl font-bold mb-6">A mente técnica por trás.</h2>
+                <h2 class="text-3xl font-bold mb-6">Trabalho técnico sério.</h2>
                 <p class="text-slate-400 mb-6 leading-relaxed">
-                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com sólido background corporativo em TI desde 2011. 
+                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com background em tecnologia desde 2011. 
                 </p>
                 <p class="text-slate-400 leading-relaxed mb-8">
-                    Com visão direcionada para o futuro da conectividade e Internet das Coisas (IoT), a nossa missão é trazer para a região o mesmo rigor técnico exigido nas grandes empresas do país. Se o seu equipamento exige performance extrema ou sua rede requer estabilidade absoluta, você está no lugar certo.
+                    Nossa missão é trazer para o comércio local e para as propriedades rurais da região o mesmo nível de infraestrutura das grandes cidades. Se você precisa que o seu equipamento simplesmente funcione, sem desculpas, conte conosco.
                 </p>
+                <a href="https://wa.me/5512996005169" target="_blank" class="inline-flex items-center gap-2 text-sky-400 hover:text-sky-300 font-medium transition-colors">
+                    <i data-lucide="smartphone" class="w-5 h-5"></i> Chamar no WhatsApp
+                </a>
             </div>
             <div class="w-full md:w-1/3">
                 <div class="aspect-square rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex items-center justify-center relative overflow-hidden">
@@ -273,7 +287,7 @@
             <div class="text-xl font-bold tracking-tighter text-white mb-4 flex justify-center items-center gap-2">
                 <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> TOP<span class="text-sky-400">1</span>NFO
             </div>
-            <p class="mb-4">Tecnologia sem paliativos em Pedra Bonita, Manhuaçu e Região.</p>
+            <p class="mb-4">Tecnologia, Design e Infraestrutura.<br/>Atendimento: Pedra Bonita, Manhuaçu e Região.</p>
             <p>&copy; 2026 Top1nfo. Liderado por Thiago Pianca.</p>
         </div>
     </footer>
