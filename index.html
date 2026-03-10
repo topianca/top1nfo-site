@@ -19,7 +19,6 @@
         
         .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
         
-        /* Ocultar a seta padrão do details no Safari/Chrome */
         details > summary::-webkit-details-marker { display: none; }
     </style>
 </head>
@@ -29,10 +28,10 @@
 
     <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
         <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
-            <div class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+            <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2 hover:opacity-80 transition-opacity">
                 <i data-lucide="cpu" class="text-sky-400 w-8 h-8"></i>
                 <span>TOP<span class="text-sky-400">1</span>NFO</span>
-            </div>
+            </a>
             <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
                 <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
                 <a href="#catalogo" class="hover:text-sky-400 transition-colors">Catálogo Completo</a>
@@ -51,10 +50,10 @@
                 Atendendo Pedra Bonita, Manhuaçu e Região
             </div>
             <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-gradient-white leading-tight">
-                A tecnologia que <br /> <span class="text-gradient">facilita o seu trabalho.</span>
+                A tecnologia que <br /> <span class="text-gradient">não deixa você parar.</span>
             </h1>
             <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
-                Deixamos seus equipamentos rápidos, sua internet estável no sítio ou comércio, e a sua marca profissional no ambiente digital.
+                Deixamos o seu sistema de vendas rápido, a internet da sua propriedade estável e a sua marca profissional no ambiente digital.
             </p>
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <a href="https://wa.me/5512996005169" target="_blank" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-xl font-bold hover:bg-white transition-colors flex items-center justify-center gap-2">
@@ -72,26 +71,26 @@
             
             <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
                 <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
-                    <i data-lucide="monitor-wrench" class="text-sky-400 w-8 h-8"></i>
+                    <i data-lucide="monitor" class="text-sky-400 w-8 h-8"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Computador Travando?</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">Limpamos, formatamos e instalamos peças novas (SSD) para o seu notebook ou PC ligar em segundos, sem perder seus arquivos.</p>
+                <h3 class="text-xl font-bold mb-3">Computador ou Caixa Lento?</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Manutenção, formatação e instalação de SSD. Deixamos o seu notebook ou sistema de vendas (PDV) rápido de novo, sem perder nenhum arquivo.</p>
             </div>
 
             <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
                 <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
-                    <i data-lucide="wifi" class="text-sky-400 w-8 h-8"></i>
+                    <i data-lucide="cctv" class="text-sky-400 w-8 h-8"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Internet que não cai</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">Seja na roça ou no comércio. Puxamos o sinal Wi-Fi para ficar forte na casa toda e organizamos os cabos para seu sistema não parar.</p>
+                <h3 class="text-xl font-bold mb-3">Internet Rural e Câmeras</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Levamos sinal de internet estável para a sua propriedade e instalamos sistemas de câmeras para você monitorar tudo direto pelo celular.</p>
             </div>
 
             <div class="card-tech p-8 rounded-2xl flex flex-col items-center text-center">
                 <div class="bg-sky-500/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
-                    <i data-lucide="megaphone" class="text-sky-400 w-8 h-8"></i>
+                    <i data-lucide="smartphone" class="text-sky-400 w-8 h-8"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Apareça e Venda Mais</h3>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6">Criamos sua logomarca, artes, cardápio digital e colocamos a sua empresa no mapa do Google para os clientes te acharem rápido.</p>
+                <h3 class="text-xl font-bold mb-3">Venda mais pelo WhatsApp</h3>
+                <p class="text-slate-400 text-sm leading-relaxed mb-6">Criamos sua logomarca, cardápio digital, colocamos robôs para responder clientes 24h e garantimos sua empresa no mapa do Google.</p>
             </div>
 
         </div>
@@ -101,7 +100,7 @@
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo Completo</h2>
-                <p class="text-slate-400">Tudo o que a Top1nfo pode fazer pelo seu negócio. Clique para expandir.</p>
+                <p class="text-slate-400">Tudo o que a Top1nfo pode fazer pelo seu negócio. Clique nas abas para expandir.</p>
             </div>
             
             <div class="space-y-4">
@@ -231,7 +230,7 @@
 
                 <details class="group bg-slate-900/50 border border-emerald-900/50 rounded-xl overflow-hidden">
                     <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                        <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">6. Contratos e Suporte Mensal (Empresas)</span></div>
+                        <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">6. Contratos Mensais (Empresas)</span></div>
                         <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
                     </summary>
                     <div class="p-5 pt-0 border-t border-slate-800">
@@ -244,12 +243,8 @@
                                 <div><strong class="text-white">Backup Gerenciado</strong><p class="text-slate-400 text-xs mt-1">Cópia de segurança diária do sistema da sua loja.</p></div>
                                 <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
-                            <li class="flex justify-between items-center border-b border-slate-800/50 pb-2">
-                                <div><strong class="text-white">Mini-ISP Rural</strong><p class="text-slate-400 text-xs mt-1">Gerenciamento e link dedicado contínuo para sítios.</p></div>
-                                <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
-                            </li>
                             <li class="flex justify-between items-center">
-                                <div><strong class="text-white">MDR (Segurança 24/7)</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ataques hackers e vírus de sequestro de dados.</p></div>
+                                <div><strong class="text-white">Segurança 24/7</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ataques e vírus de sequestro de dados.</p></div>
                                 <a href="https://wa.me/5512996005169" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-3 py-1.5 rounded-md border border-emerald-500/20 whitespace-nowrap">Agendar Reunião</a>
                             </li>
                         </ul>
@@ -265,7 +260,7 @@
             <div class="flex-1">
                 <h2 class="text-3xl font-bold mb-6">Trabalho técnico sério.</h2>
                 <p class="text-slate-400 mb-6 leading-relaxed">
-                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com background em tecnologia desde 2011. 
+                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com sólida bagagem em tecnologia corporativa desde 2011. 
                 </p>
                 <p class="text-slate-400 leading-relaxed mb-8">
                     Nossa missão é trazer para o comércio local e para as propriedades rurais da região o mesmo nível de infraestrutura das grandes cidades. Se você precisa que o seu equipamento simplesmente funcione, sem desculpas, conte conosco.
