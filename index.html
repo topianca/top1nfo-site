@@ -1,414 +1,285 @@
-<section id="servicos" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
-        <div class="max-w-7xl mx-auto">
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top1nfo | Soluções em Tecnologia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+        body { background-color: #030712; color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+        
+        .glass-nav { background: rgba(3, 7, 18, 0.7); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .card-tech { background: linear-gradient(145deg, rgba(30, 41, 59, 0.4) 0%, rgba(15, 23, 42, 0.4) 100%); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .card-tech:hover { border-color: rgba(56, 189, 248, 0.4); transform: translateY(-5px); box-shadow: 0 10px 30px -10px rgba(56, 189, 248, 0.15); }
+        
+        .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #3b82f6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        
+        .bg-grid { background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px); }
+    </style>
+</head>
+<body class="antialiased bg-grid relative">
+
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/20 blur-[120px] rounded-full pointer-events-none"></div>
+
+    <nav class="fixed w-full z-50 glass-nav transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="text-2xl font-extrabold tracking-tighter flex items-center gap-2">
+                <i data-lucide="cpu" class="text-sky-400 w-8 h-8"></i>
+                <span>TOP<span class="text-sky-400">1</span>NFO</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#servicos" class="hover:text-sky-400 transition-colors">Catálogo</a>
+                <a href="#sobre" class="hover:text-sky-400 transition-colors">A Empresa</a>
+            </div>
+            <a href="https://wa.me/5512996005169" target="_blank" class="bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]">
+                WhatsApp
+            </a>
+        </div>
+    </nav>
+
+    <section class="pt-40 pb-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto text-center">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-8">
+                <span class="w-2 h-2 rounded-full bg-sky-400 animate-pulse"></span>
+                Cobertura: Pedra Bonita, Manhuaçu e Região
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 text-gradient-white leading-tight">
+                Infraestrutura e Tecnologia <br /> <span class="text-gradient">sem gargalos.</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-12 leading-relaxed">
+                Hardware de alta performance, redes estruturadas de confiança e automação IoT. Desempenho máximo para o seu negócio e estabilidade para a sua fazenda.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <a href="https://wa.me/5512996005169" target="_blank" class="w-full sm:w-auto bg-slate-100 text-slate-950 px-8 py-4 rounded-xl font-bold hover:bg-white transition-colors flex items-center justify-center gap-2">
+                    <i data-lucide="message-square" class="w-5 h-5"></i> Solicitar Orçamento
+                </a>
+                <a href="#servicos" class="w-full sm:w-auto px-8 py-4 rounded-xl font-medium border border-slate-700 hover:border-slate-500 transition-colors flex items-center justify-center gap-2">
+                    Ver Catálogo <i data-lucide="arrow-down" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-24 px-6 relative z-10 border-t border-slate-800/50 bg-slate-950/50">
+        <div class="max-w-4xl mx-auto">
             <div class="text-center mb-16">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-sky-500/30 bg-sky-500/10 text-sky-400 text-xs font-semibold uppercase tracking-wider mb-6">
-                    Cobertura: Pedra Bonita, Manhuaçu e Região
-                </div>
                 <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo de Soluções</h2>
-                <p class="text-slate-400">Infraestrutura robusta e serviços desenhados para quem não pode parar.</p>
+                <p class="text-slate-400">Clique nas categorias abaixo para expandir e ver detalhes e valores.</p>
             </div>
             
-            <div class="max-w-4xl mx-auto">
-                <div class="space-y-4">
-                    
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="wrench" class="text-sky-400 w-5 h-5"></i> 1. Manutenção e Hardware</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Limpeza e Otimização de PC</strong><p class="text-slate-400 text-xs mt-1">Remoção de malware, limpeza de disco, atualização de drivers, backup prévio.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 180</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Upgrade de Máquina (SSD / RAM / GPU)</strong><p class="text-slate-400 text-xs mt-1">Instalação de SSD, clonagem, expansão RAM, testes de stress.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 400 + peças</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Montagem de PC Gamer / Edição</strong><p class="text-slate-400 text-xs mt-1">Consultoria de peças, montagem, BIOS/OC básico, benchmarks.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 400</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Instalação de Linux Customizado</strong><p class="text-slate-400 text-xs mt-1">Deploy de distribuição (CachyOS, Ubuntu), ajuste de drivers.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 120 – R$ 200</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Recuperação de Dados</strong><p class="text-slate-400 text-xs mt-1">Clonagem de disco, software forense (Recuva, TestDisk).</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 2.500</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Manutenção de Impressoras</strong><p class="text-slate-400 text-xs mt-1">Limpeza de cabeçotes, desentupimento, substituição de toner.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 50 – R$ 150</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+            <div class="space-y-4">
+                
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="wrench" class="text-sky-400 w-5 h-5"></i> 1. Manutenção e Hardware</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Limpeza e Otimização de PC</strong><p class="text-slate-400 text-xs mt-1">Remoção de malware, limpeza de disco, atualização de drivers, backup prévio.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 180</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Upgrade de Máquina (SSD / RAM / GPU)</strong><p class="text-slate-400 text-xs mt-1">Instalação de SSD, clonagem, expansão RAM, testes de stress.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">A partir de R$ 80</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Montagem de PC Gamer / Edição</strong><p class="text-slate-400 text-xs mt-1">Consultoria de peças, montagem, BIOS/OC básico, benchmarks.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 400</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Instalação de Linux Customizado</strong><p class="text-slate-400 text-xs mt-1">Deploy de distribuição, ajuste de drivers.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 120 – R$ 200</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Recuperação de Dados</strong><p class="text-slate-400 text-xs mt-1">Clonagem de disco, software forense.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 2.500</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="network" class="text-sky-400 w-5 h-5"></i> 2. Redes e Infraestrutura</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Expansão de Sinal Wi-Fi</strong><p class="text-slate-400 text-xs mt-1">Survey, crimpagem, configuração de APs/mesh.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 600 + eq.</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Cabeamento Estruturado</strong><p class="text-slate-400 text-xs mt-1">Passagem de cabos, tomadas, crimpagem, identificação.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150/ponto</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Link Rural (4G/5G/Rádio)</strong><p class="text-slate-400 text-xs mt-1">Testes de sinal, instalação de antenas, tuning.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 2.000</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Backup em Nuvem</strong><p class="text-slate-400 text-xs mt-1">Rotinas automáticas (Google Drive, OneDrive).</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 500 (setup)</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="network" class="text-sky-400 w-5 h-5"></i> 2. Redes e Infraestrutura</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Expansão de Sinal Wi-Fi</strong><p class="text-slate-400 text-xs mt-1">Survey, crimpagem, configuração de APs/mesh.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 600</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Cabeamento Estruturado</strong><p class="text-slate-400 text-xs mt-1">Passagem de cabos, tomadas, crimpagem.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150/pt</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Link Rural (4G/5G/Rádio)</strong><p class="text-slate-400 text-xs mt-1">Testes de sinal, instalação de antenas.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 2.000</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Backup em Nuvem</strong><p class="text-slate-400 text-xs mt-1">Rotinas automáticas de segurança.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 500</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="sprout" class="text-sky-400 w-5 h-5"></i> 3. Agrotech e IoT (Ouro Local)</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Monitoramento de Secador de Café</strong><p class="text-slate-400 text-xs mt-1">Microcontrolador + sensores, dashboard na nuvem.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 800 – R$ 2.000 + pc.</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Irrigação Inteligente</strong><p class="text-slate-400 text-xs mt-1">Probes de umidade, relés para bombas, app.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 2.500</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Rastreamento GPS Maquinário</strong><p class="text-slate-400 text-xs mt-1">Módulo GPS/GPRS oculto, painel web.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 400 + eq.</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Cerca Elétrica Inteligente</strong><p class="text-slate-400 text-xs mt-1">Integração GSM/Wi-Fi, notificações Telegram.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 350 – R$ 700 + eq.</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Mapeamento por Drone</strong><p class="text-slate-400 text-xs mt-1">Voo programado, mapas NDVI.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.200/voo</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="sprout" class="text-sky-400 w-5 h-5"></i> 3. Agrotech e IoT (Ouro Local)</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Monitoramento de Secador de Café</strong><p class="text-slate-400 text-xs mt-1">Microcontrolador + sensores, dashboard na nuvem.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">A partir R$ 800</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Irrigação Inteligente</strong><p class="text-slate-400 text-xs mt-1">Probes de umidade, relés para bombas, app.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 2.500</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Rastreamento GPS Maquinário</strong><p class="text-slate-400 text-xs mt-1">Módulo oculto em tratores com painel web.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 400</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Mapeamento por Drone</strong><p class="text-slate-400 text-xs mt-1">Voo programado, mapas NDVI.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 300/voo</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="hard-hat" class="text-sky-400 w-5 h-5"></i> 4. Projetos e Instalações em Obras</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Automação na Planta</strong><p class="text-slate-400 text-xs mt-1">Projeto de pontos, passagem de conduítes pré-reboco.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 800</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Câmeras IP e Monitoramento</strong><p class="text-slate-400 text-xs mt-1">Instalação de câmeras, NVR/cloud.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 200/câm.</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Home Theater</strong><p class="text-slate-400 text-xs mt-1">Montagem, calibração de áudio/vídeo.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 1.500</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="hard-hat" class="text-sky-400 w-5 h-5"></i> 4. Projetos e Instalações em Obras</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Automação na Planta</strong><p class="text-slate-400 text-xs mt-1">Projeto de pontos, passagem de conduítes pré-reboco.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 800</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Câmeras IP e Monitoramento</strong><p class="text-slate-400 text-xs mt-1">Instalação de câmeras, NVR/cloud.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 100/câm.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="globe" class="text-sky-400 w-5 h-5"></i> 5. Presença Digital e E-commerce</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Google Meu Negócio</strong><p class="text-slate-400 text-xs mt-1">Setup completo, SEO local, fotos.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 350</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Cartão Digital / Link na Bio</strong><p class="text-slate-400 text-xs mt-1">Mini-página mobile responsiva.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Site / Loja Virtual</strong><p class="text-slate-400 text-xs mt-1">Registro de domínio, hospedagem, pagamento.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 600 – R$ 3.000</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Implantação de ERP</strong><p class="text-slate-400 text-xs mt-1">Parametrização, treinamento.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 400 – R$ 3.000</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="globe" class="text-sky-400 w-5 h-5"></i> 5. Presença Digital e E-commerce</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Google Meu Negócio</strong><p class="text-slate-400 text-xs mt-1">Setup completo, SEO local, fotos.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 350</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Site / Loja Virtual</strong><p class="text-slate-400 text-xs mt-1">Registro de domínio, hospedagem, pagamento.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 600 – R$ 3.000</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Implantação de ERP</strong><p class="text-slate-400 text-xs mt-1">Parametrização e treinamento de sistemas de gestão.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">A partir R$ 400</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="bot" class="text-sky-400 w-5 h-5"></i> 6. IA, Automação e Atendimento</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Robô de WhatsApp</strong><p class="text-slate-400 text-xs mt-1">Fluxos no WhatsApp Business API.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 400 – R$ 800 + mens.</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Automação low-code</strong><p class="text-slate-400 text-xs mt-1">Webhooks, integrações.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.200</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="bot" class="text-sky-400 w-5 h-5"></i> 6. IA, Automação e Atendimento</div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Robô de WhatsApp</strong><p class="text-slate-400 text-xs mt-1">Seu WhatsApp responde sozinho 24h.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 400 + mens.</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Automação Low-code</strong><p class="text-slate-400 text-xs mt-1">Integrações de sistemas via webhooks.</p></div>
+                                <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.200</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="video" class="text-sky-400 w-5 h-5"></i> 7. Design, Foto, Vídeo e YouTube</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Logotipo / Identidade Visual</strong><p class="text-slate-400 text-xs mt-1">Vetorização, paleta de cores.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 400</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Catálogo Digital / QR Code</strong><p class="text-slate-400 text-xs mt-1">Diagramação no Canva/Photoshop.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 100 – R$ 300</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Fotografia de Produto</strong><p class="text-slate-400 text-xs mt-1">Sessão de fotos, edição.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 600</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Edição de Vídeo</strong><p class="text-slate-400 text-xs mt-1">Edição para Shorts/Reels/YouTube.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 50 – R$ 150/vídeo</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Transmissão ao Vivo</strong><p class="text-slate-400 text-xs mt-1">Configuração de OBS, captura de áudio.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 400 – R$ 900</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+                <details class="group bg-slate-900/50 border border-emerald-900/50 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+                        <div class="flex items-center gap-3"><i data-lucide="dollar-sign" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">Serviços de Alta Margem (Contratos)</span></div>
+                        <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+                    </summary>
+                    <div class="p-5 pt-0 border-t border-slate-800">
+                        <ul class="space-y-3 text-sm mt-3">
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Monitoramento IoT (Agro)</strong><p class="text-slate-400 text-xs mt-1">Sensores + dashboard + alertas.</p></div>
+                                <span class="text-emerald-400 font-mono text-xs">R$ 79 – R$ 299/mês</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">MDR (Segurança 24/7)</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ameaças.</p></div>
+                                <span class="text-emerald-400 font-mono text-xs">R$ 200 – R$ 800/mês</span>
+                            </li>
+                            <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
+                                <div><strong class="text-white">Mini-ISP Rural</strong><p class="text-slate-400 text-xs mt-1">Link dedicado para sítios.</p></div>
+                                <span class="text-emerald-400 font-mono text-xs">R$ 400 + R$ 79/mês</span>
+                            </li>
+                            <li class="flex justify-between items-start">
+                                <div><strong class="text-white">Assinatura de Segurança (SLA)</strong><p class="text-slate-400 text-xs mt-1">Suporte e atendimento prioritário em TI.</p></div>
+                                <span class="text-emerald-400 font-mono text-xs">R$ 99 – R$ 499/mês</span>
+                            </li>
+                        </ul>
+                    </div>
+                </details>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> 8. Alto Processamento e GPU</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Renderização por Demanda</strong><p class="text-slate-400 text-xs mt-1">Uso de RTX 3060 Ti para Lumion/V-Ray.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 50 – R$ 150/img</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Restauração de Fotos com IA</strong><p class="text-slate-400 text-xs mt-1">Softwares de upscaling com IA.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 30 – R$ 120/foto</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
+            </div>
+        </div>
+    </section>
 
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="shield-check" class="text-sky-400 w-5 h-5"></i> 9. Consultoria Financeira e Segurança</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Renda Passiva (DePIN)</strong><p class="text-slate-400 text-xs mt-1">Setup de Grass, Honeygain, etc.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 300</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Consultoria Cripto</strong><p class="text-slate-400 text-xs mt-1">Abertura de conta, 2FA, carteiras.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 300/hora</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Auditoria de Segurança</strong><p class="text-slate-400 text-xs mt-1">Varredura, firewall, hardening.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.500</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="gamepad-2" class="text-sky-400 w-5 h-5"></i> 10. Gaming e Servidores</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Servidor de Jogos (OTServers)</strong><p class="text-slate-400 text-xs mt-1">VPS, banco de dados, backups.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 400 – R$ 1.500</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Otimização para Gamers</strong><p class="text-slate-400 text-xs mt-1">QoS, undervolting, ajustes de SO.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 250</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="landmark" class="text-sky-400 w-5 h-5"></i> 11. B2G (Câmara / Igreja)</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Digitalização de Arquivos</strong><p class="text-slate-400 text-xs mt-1">Escaneamento em lote, OCR, indexação.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 500 – R$ 1.500</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Transmissão de Sessões</strong><p class="text-slate-400 text-xs mt-1">Setup multicâmera, OBS.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 400 – 1.200 + taxa</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="users" class="text-sky-400 w-5 h-5"></i> 12. Serviços Locais (B2C)</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Suporte para Nômades Digitais</strong><p class="text-slate-400 text-xs mt-1">Levantamento, VPN, otimização.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 200 – R$ 400</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Aulas para Idosos</strong><p class="text-slate-400 text-xs mt-1">Aulas presenciais personalizadas.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 60 – R$ 120/hora</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Regularização ECAD</strong><p class="text-slate-400 text-xs mt-1">Abertura de processo no ECAD.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Desbloqueio de Celular</strong><p class="text-slate-400 text-xs mt-1">Procedimentos autorizados.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 50 – R$ 100</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Certificado Digital</strong><p class="text-slate-400 text-xs mt-1">Orientação, instalação.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 80 – R$ 150</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="sun" class="text-sky-400 w-5 h-5"></i> 13. Energia, Solar e Autossuficiência</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Auditoria Fotovoltaica</strong><p class="text-slate-400 text-xs mt-1">Leitura de inversores, relatório.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 300 – R$ 1.200</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Manutenção de Baterias</strong><p class="text-slate-400 text-xs mt-1">Checkups, equalização.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 150 – R$ 600/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Instalação de No-breaks</strong><p class="text-slate-400 text-xs mt-1">Dimensionamento, teste de carga.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 120 – R$ 400</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="printer" class="text-sky-400 w-5 h-5"></i> 14. Produtos e Prototipagem</div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Impressão 3D</strong><p class="text-slate-400 text-xs mt-1">Modelagem 3D, impressão.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 30 – R$ 500/peça</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Plotagem e Adesivos</strong><p class="text-slate-400 text-xs mt-1">Design, impressão.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 50 – R$ 600</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Venda de PCs Recondicionados</strong><p class="text-slate-400 text-xs mt-1">Limpeza, troca de peças com garantia.</p></div>
-                                    <span class="text-sky-400 font-mono text-xs">R$ 600 – R$ 2.200</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
-                    <details class="group bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="p-5 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
-                            <div class="flex items-center gap-3"><i data-lucide="dollar-sign" class="text-emerald-400 w-5 h-5"></i> <span class="text-emerald-400">15. Serviços de Alta Margem (Recorrentes)</span></div>
-                            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
-                        </summary>
-                        <div class="p-5 pt-0 border-t border-slate-800">
-                            <ul class="space-y-3 text-sm mt-3">
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Monitoramento IoT (Agro)</strong><p class="text-slate-400 text-xs mt-1">Sensores + dashboard + alertas.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 79 – R$ 299/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Backup Gerenciado (DRaaS)</strong><p class="text-slate-400 text-xs mt-1">Backup automático com SLA.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 50 – R$ 300/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">MDR (Segurança 24/7)</strong><p class="text-slate-400 text-xs mt-1">Proteção contra ameaças.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 200 – R$ 800/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">CFTV na Nuvem</strong><p class="text-slate-400 text-xs mt-1">Câmeras com gravação em nuvem.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 49 – 199/câm/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Mini-ISP Rural</strong><p class="text-slate-400 text-xs mt-1">Link dedicado para sítios.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 400 + R$ 79/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Telemetria de Frota</strong><p class="text-slate-400 text-xs mt-1">Rastreadores + painel.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 29 – R$ 99/veículo</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">Marketplace Local</strong><p class="text-slate-400 text-xs mt-1">Loja virtual com WhatsApp.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 1.200 + R$ 49/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start border-b border-slate-800/50 pb-2">
-                                    <div><strong class="text-white">ERP + Suporte Mensal</strong><p class="text-slate-400 text-xs mt-1">ERP com acompanhamento.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 800 + R$ 99/mês</span>
-                                </li>
-                                <li class="flex justify-between items-start">
-                                    <div><strong class="text-white">Assinatura de Segurança (SLA)</strong><p class="text-slate-400 text-xs mt-1">Atendimento prioritário.</p></div>
-                                    <span class="text-emerald-400 font-mono text-xs">R$ 99 – R$ 499/mês</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </details>
-
+    <section id="sobre" class="py-24 px-6 relative z-10">
+        <div class="max-w-5xl mx-auto card-tech p-10 md:p-14 rounded-3xl border border-slate-800 flex flex-col md:flex-row gap-12 items-center">
+            <div class="flex-1">
+                <h2 class="text-3xl font-bold mb-6">A mente técnica por trás.</h2>
+                <p class="text-slate-400 mb-6 leading-relaxed">
+                    A Top1nfo é liderada por <strong>Thiago Pianca</strong>, profissional com sólido background corporativo em TI desde 2011. 
+                </p>
+                <p class="text-slate-400 leading-relaxed mb-8">
+                    Com visão direcionada para o futuro da conectividade e Internet das Coisas (IoT), a nossa missão é trazer para a região o mesmo rigor técnico exigido nas grandes empresas do país. Se o seu equipamento exige performance extrema ou sua rede requer estabilidade absoluta, você está no lugar certo.
+                </p>
+            </div>
+            <div class="w-full md:w-1/3">
+                <div class="aspect-square rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex items-center justify-center relative overflow-hidden">
+                    <i data-lucide="cpu" class="text-sky-400 w-24 h-24 relative z-10 opacity-80"></i>
                 </div>
             </div>
         </div>
     </section>
+
+    <footer class="py-12 border-t border-slate-800/60 text-slate-500 text-sm bg-slate-950">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="text-xl font-bold tracking-tighter text-white mb-4 flex justify-center items-center gap-2">
+                <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> TOP<span class="text-sky-400">1</span>NFO
+            </div>
+            <p class="mb-4">Tecnologia sem paliativos em Pedra Bonita, Manhuaçu e Região.</p>
+            <p>&copy; 2026 Top1nfo. Liderado por Thiago Pianca.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
