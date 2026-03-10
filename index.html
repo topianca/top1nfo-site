@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Top1nfo | Tecnologia Global e Regional – Pedra Bonita, MG</title>
   
-  <meta name="description" content="Suporte corporativo e tecnologia de precisão em Pedra Bonita, Manhuaçu e região. Especialista em sistemas, infraestrutura rural e assessoria digital." />
+  <meta name="description" content="Suporte corporativo, infraestrutura rural e tecnologia de precisão em Pedra Bonita, Manhuaçu e região. Especialista em sistemas, segurança e assessoria digital." />
   <meta name="author" content="Thiago Pianca" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -33,6 +33,7 @@
   <style>
     :root{--bg:#020617;--accent:#38bdf8}
     body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    
     .glass-nav{ background: rgba(2, 6, 23, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
     .bg-grid{ background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px); }
     .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
@@ -47,6 +48,9 @@
     /* Cards */
     .card-tech { background: linear-gradient(145deg, rgba(30, 41, 59, 0.3) 0%, rgba(15, 23, 42, 0.3) 100%); border: 1px solid rgba(255,255,255,0.04); transition:all .3s ease; }
     .card-tech:hover { border-color: rgba(56, 189, 248, 0.3); transform: translateY(-5px); }
+
+    /* Esconde seta original do detalhe */
+    details > summary::-webkit-details-marker { display: none; }
   </style>
 </head>
 <body class="antialiased bg-grid relative">
@@ -62,6 +66,7 @@
       <div class="hidden md:flex gap-10 items-center text-[12px] uppercase tracking-[0.15em] font-bold text-slate-400">
         <a href="#" class="text-white hover:text-sky-400 transition-colors">Início</a>
         <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
+        <a href="#catalogo" class="hover:text-sky-400 transition-colors">Catálogo</a>
         <a href="#sobre" class="hover:text-sky-400 transition-colors">Empresa</a>
       </div>
       <a href="https://wa.me/5512996005169" target="_blank" class="hidden sm:flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-full text-[11px] font-black uppercase shadow-lg">
@@ -87,25 +92,25 @@
         Do usuário comum e comércio local ao agronegócio, entrego suporte técnico especializado para quem busca precisão. Da gestão de sistemas à infraestrutura essencial no campo, <strong>aplico minha experiência internacional para garantir que o seu negócio nunca pare por tecnologia.</strong>
       </p>
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm flex items-center justify-center gap-3">
-          Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm flex items-center justify-center gap-3 group">
+          Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
         </a>
-        <a href="#destaques" class="btn-glass w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm text-white flex items-center justify-center gap-3">
+        <a href="#catalogo" class="btn-glass w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm text-white flex items-center justify-center gap-3">
           <i data-lucide="layers" class="w-4 h-4 text-sky-400"></i> Conhecer Soluções
         </a>
       </div>
     </section>
   </main>
 
-  <section id="destaques" class="pt-8 pb-32 px-6 relative z-10">
+  <section id="destaques" class="pt-8 pb-20 px-6 relative z-10">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
         <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M2 3h20v14H2zM8 21h8M12 17v4"></path></svg>
         </div>
-        <h3 class="text-xl font-bold mb-3">Manutenção e Montagem</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Limpeza técnica, montagem de PCs gamer/trabalho e upgrades de SSD/RAM para máxima velocidade.</p>
+        <h3 class="text-xl font-bold mb-3">Manutenção e Equipamentos</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Venda de eletrônicos, limpeza técnica, montagem de PCs e upgrades de performance para máxima velocidade.</p>
       </div>
 
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
@@ -113,7 +118,7 @@
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"></path><circle cx="12" cy="20" r="1"></circle></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Internet Rural e Câmeras</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Conexão estável para fazendas e instalação de sistemas de câmeras monitoradas pelo celular.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Conexão estável para fazendas, Wi-Fi em toda propriedade e instalação de câmeras monitoradas pelo celular.</p>
       </div>
 
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
@@ -121,35 +126,338 @@
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Sistemas para Negócios</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Consultoria em sistemas de gestão (ERP), organização de dados e eficiência para o comércio e empresas.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Desenvolvimento sob medida, sistemas de gestão (ERP), auditoria de dados e integrações comerciais automáticas.</p>
       </div>
 
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
         <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
         </div>
-        <h3 class="text-xl font-bold mb-3">Websites e Identidade</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Criação de logotipos, sites profissionais e catálogos digitais para destacar seu negócio na internet.</p>
+        <h3 class="text-xl font-bold mb-3">Websites e Marketing</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Criação de logotipos, sites, lojas virtuais e catálogos digitais para destacar seu negócio e vender mais.</p>
       </div>
 
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
         <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
         </div>
-        <h3 class="text-xl font-bold mb-3">Educação Digital</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Aulas particulares de informática, cursos para terceira idade e treinamento de sistemas para equipes.</p>
+        <h3 class="text-xl font-bold mb-3">Educação e Idiomas</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Aulas VIP de informática, cursos de programação básica, terceira idade e idiomas (Espanhol e Italiano).</p>
       </div>
 
       <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
         <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
         </div>
-        <h3 class="text-xl font-bold mb-3">Assessoria Digital</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Apoio técnico em licitações, assessoria para compras online seguras e auxílio em serviços públicos (Gov.br).</p>
+        <h3 class="text-xl font-bold mb-3">Assessoria Completa</h3>
+        <p class="text-slate-400 text-sm leading-relaxed">Apoio em licitações, assessoria para compras online, gestão ECAD e suporte com portais Gov.br.</p>
       </div>
 
     </div>
   </section>
+
+  <section id="catalogo" class="py-24 px-6 border-t border-slate-800/40 relative z-10 bg-slate-950/50">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Catálogo de Serviços</h2>
+        <p class="text-slate-400">Clique nas categorias para expandir e conhecer nossas soluções completas. Solicite seu orçamento direto pelo WhatsApp.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="wrench" class="text-sky-400 w-6 h-6"></i> <span class="text-lg">1. Suporte Técnico, Hardware e Logística</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Limpeza, Formatação e Otimização</span> <span class="text-slate-400 block mt-1">Remoção de vírus, backup seguro e otimização completa para eliminar lentidão.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Limpeza,%20Formatação%20e%20Otimização" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-4 py-2 rounded-lg border border-sky-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Upgrades e Montagem de PCs</span> <span class="text-slate-400 block mt-1">Instalação de SSD, Memória RAM e montagem de computadores (Trabalho e Gamer).</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Upgrade%20e%20Montagem%20de%20PCs" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-4 py-2 rounded-lg border border-sky-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Venda de Equipamentos e Tecnologia</span> <span class="text-slate-400 block mt-1">Comercialização de computadores, notebooks, servidores, periféricos e eletrônicos.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20saber%20sobre%20Venda%20de%20Equipamentos" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-4 py-2 rounded-lg border border-sky-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Recuperação Avançada e Forense</span> <span class="text-slate-400 block mt-1">Resgate de dados críticos em HDs, SSDs, pendrives, cartões de memória e RAID.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Recuperação%20de%20Dados" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-4 py-2 rounded-lg border border-sky-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Logística e Comodidade</span> <span class="text-slate-400 block mt-1">Retirada e entrega de equipamentos com comerciantes parceiros.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20solicitar%20uma%20Retirada%20de%20Equipamento" target="_blank" class="text-sky-400 text-xs hover:text-sky-300 bg-sky-500/10 px-4 py-2 rounded-lg border border-sky-500/20 whitespace-nowrap w-fit">Agendar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="tractor" class="text-emerald-400 w-6 h-6"></i> <span class="text-lg">2. Infraestrutura Rural e Agrotech</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Internet no Sítio e Mini-ISP</span> <span class="text-slate-400 block mt-1">Instalação de links dedicados (Rádio/4G/5G) com alta estabilidade e suporte rápido.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Internet%20Rural" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-4 py-2 rounded-lg border border-emerald-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Wi-Fi em Toda a Propriedade</span> <span class="text-slate-400 block mt-1">Expansão de sinal para que a internet pegue em todos os cômodos e galpões.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Expansão%20de%20Wi-Fi" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-4 py-2 rounded-lg border border-emerald-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Câmeras e Segurança CFTV</span> <span class="text-slate-400 block mt-1">Monitoramento inteligente pelo celular para fazendas, galpões e residências.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Instalação%20de%20Câmeras" target="_blank" class="text-emerald-400 text-xs hover:text-emerald-300 bg-emerald-500/10 px-4 py-2 rounded-lg border border-emerald-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 opacity-60">
+                <div><span class="text-white font-bold text-base">Em Breve – Automação Rural e IoT</span> <span class="text-slate-400 block mt-1">Projetos em estudo para sensores de temperatura de café e irrigação inteligente.</span></div>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="database" class="text-indigo-400 w-6 h-6"></i> <span class="text-lg">3. Sistemas, Gestão e Integrações</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Desenvolvimento sob Medida</span> <span class="text-slate-400 block mt-1">Criação de softwares, aplicativos e soluções personalizadas para o seu fluxo de trabalho.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Desenvolvimento%20sob%20Medida" target="_blank" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-4 py-2 rounded-lg border border-indigo-500/20 whitespace-nowrap w-fit">Orçar Projeto</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Implantação de Sistemas ERP</span> <span class="text-slate-400 block mt-1">Gestão completa para organizar suas vendas, estoque e finanças.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Sistemas%20ERP" target="_blank" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-4 py-2 rounded-lg border border-indigo-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Integrações Inteligentes</span> <span class="text-slate-400 block mt-1">Conexão automática entre WhatsApp, ERP e planilhas via Make/Node-RED.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20saber%20mais%20sobre%20Integrações%20Comerciais" target="_blank" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-4 py-2 rounded-lg border border-indigo-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Organização e Auditoria de Dados</span> <span class="text-slate-400 block mt-1">Estruturação de planilhas e limpeza de bancos de dados para melhor gestão.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20Organização%20e%20Auditoria%20de%20Dados" target="_blank" class="text-indigo-400 text-xs hover:text-indigo-300 bg-indigo-500/10 px-4 py-2 rounded-lg border border-indigo-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="home" class="text-yellow-400 w-6 h-6"></i> <span class="text-lg">4. Casa Inteligente, Energia e Autossuficiência</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Automação Residencial</span> <span class="text-slate-400 block mt-1">Controle de iluminação, cortinas, fechaduras e ar-condicionado pelo celular ou voz.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Automação%20Residencial" target="_blank" class="text-yellow-400 text-xs hover:text-yellow-300 bg-yellow-500/10 px-4 py-2 rounded-lg border border-yellow-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Assistentes Virtuais</span> <span class="text-slate-400 block mt-1">Configuração e integração de dispositivos inteligentes (Alexa e Google Home).</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Assistentes%20Virtuais" target="_blank" class="text-yellow-400 text-xs hover:text-yellow-300 bg-yellow-500/10 px-4 py-2 rounded-lg border border-yellow-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Segurança Integrada</span> <span class="text-slate-400 block mt-1">Alarmes e portões inteligentes integrados ao sistema da casa.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Segurança%20Integrada" target="_blank" class="text-yellow-400 text-xs hover:text-yellow-300 bg-yellow-500/10 px-4 py-2 rounded-lg border border-yellow-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Medição Inteligente e Proteção</span> <span class="text-slate-400 block mt-1">Automação de consumo de energia, manutenção de baterias e proteção elétrica.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20saber%20sobre%20Medição%20Inteligente%20e%20Proteção" target="_blank" class="text-yellow-400 text-xs hover:text-yellow-300 bg-yellow-500/10 px-4 py-2 rounded-lg border border-yellow-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="palette" class="text-pink-400 w-6 h-6"></i> <span class="text-lg">5. Visibilidade Digital e Eventos</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Sites, Lojas Virtuais e PWA</span> <span class="text-slate-400 block mt-1">Vitrines online e cardápios digitais com botão "Comprar pelo WhatsApp".</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Criação%20de%20Site/Loja" target="_blank" class="text-pink-400 text-xs hover:text-pink-300 bg-pink-500/10 px-4 py-2 rounded-lg border border-pink-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Identidade Visual e Google</span> <span class="text-slate-400 block mt-1">Design de logos e estratégia para ser encontrado no mapa por clientes locais.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Identidade%20Visual%20e%20Google" target="_blank" class="text-pink-400 text-xs hover:text-pink-300 bg-pink-500/10 px-4 py-2 rounded-lg border border-pink-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Design e Multimídia</span> <span class="text-slate-400 block mt-1">Fotografia de produtos, edição de vídeos e restauração de fotos antigas com IA.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Serviços%20de%20Design%20e%20Foto" target="_blank" class="text-pink-400 text-xs hover:text-pink-300 bg-pink-500/10 px-4 py-2 rounded-lg border border-pink-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Streaming e Locação para Eventos</span> <span class="text-slate-400 block mt-1">Setup para transmissão ao vivo, aluguel de projetor, som e internet 4G temporária.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20saber%20sobre%20Streaming%20e%20Locação%20para%20Eventos" target="_blank" class="text-pink-400 text-xs hover:text-pink-300 bg-pink-500/10 px-4 py-2 rounded-lg border border-pink-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="graduation-cap" class="text-purple-400 w-6 h-6"></i> <span class="text-lg">6. Cursos, Idiomas e Celulares</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Informática VIP e Cursos</span> <span class="text-slate-400 block mt-1">Do básico à programação e design gráfico, para todas as idades.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20quero%20informações%20sobre%20Cursos%20de%20Informática" target="_blank" class="text-purple-400 text-xs hover:text-purple-300 bg-purple-500/10 px-4 py-2 rounded-lg border border-purple-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Inclusão Digital (Terceira Idade)</span> <span class="text-slate-400 block mt-1">Aulas com paciência e foco prático na segurança digital.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20quero%20informações%20sobre%20Informática%20para%20Terceira%20Idade" target="_blank" class="text-purple-400 text-xs hover:text-purple-300 bg-purple-500/10 px-4 py-2 rounded-lg border border-purple-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Idiomas (Espanhol e Italiano)</span> <span class="text-slate-400 block mt-1">Aulas práticas de conversação baseadas em vivência na Europa.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20quero%20saber%20sobre%20Aulas%20de%20Idiomas" target="_blank" class="text-purple-400 text-xs hover:text-purple-300 bg-purple-500/10 px-4 py-2 rounded-lg border border-purple-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Sistemas para Celulares e Tablets</span> <span class="text-slate-400 block mt-1">Migração de dados, backups, limpeza de sistema e configurações (foco em software).</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20o%20Sistema%20do%20meu%20Celular" target="_blank" class="text-purple-400 text-xs hover:text-purple-300 bg-purple-500/10 px-4 py-2 rounded-lg border border-purple-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Treinamento Corporativo</span> <span class="text-slate-400 block mt-1">Capacitação de equipes para uso de sistemas corporativos e Pacote Office.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20um%20orçamento%20para%20Treinamento%20Corporativo" target="_blank" class="text-purple-400 text-xs hover:text-purple-300 bg-purple-500/10 px-4 py-2 rounded-lg border border-purple-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="briefcase" class="text-orange-400 w-6 h-6"></i> <span class="text-lg">7. Assessoria Administrativa</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Apoio em Licitações</span> <span class="text-slate-400 block mt-1">Consultoria e auxílio técnico em processos governamentais (B2G).</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20Apoio%20em%20Licitações" target="_blank" class="text-orange-400 text-xs hover:text-orange-300 bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Assessoria para Compras Online</span> <span class="text-slate-400 block mt-1">Consultoria para comprar equipamentos de forma segura e econômica na internet.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20Assessoria%20para%20Compras%20Online" target="_blank" class="text-orange-400 text-xs hover:text-orange-300 bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Gestão ECAD e Regularização</span> <span class="text-slate-400 block mt-1">Assessoria para som em eventos, emissão de NFe, certificados digitais, gov.br e INSS.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Regularização%20Digital/ECAD" target="_blank" class="text-orange-400 text-xs hover:text-orange-300 bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Suporte Administrativo Bilíngue</span> <span class="text-slate-400 block mt-1">Tradução técnica e apoio para negócios com clientes internacionais.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20saber%20sobre%20Suporte%20Administrativo%20Bilíngue" target="_blank" class="text-orange-400 text-xs hover:text-orange-300 bg-orange-500/10 px-4 py-2 rounded-lg border border-orange-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden">
+          <summary class="p-6 font-semibold cursor-pointer flex justify-between items-center hover:bg-slate-800/50 transition-colors">
+            <div class="flex items-center gap-4"><i data-lucide="shield-check" class="text-rose-400 w-6 h-6"></i> <span class="text-lg">8. Consultoria, Segurança e SLA</span></div>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-slate-500 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <div class="p-6 pt-0 border-t border-slate-800">
+            <ul class="space-y-4 text-sm mt-4">
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Assinatura de TI (Contrato SLA)</span> <span class="text-slate-400 block mt-1">Suporte técnico preventivo com prioridade de atendimento para empresas.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20tenho%20interesse%20em%20uma%20Assinatura%20mensal%20de%20TI%20(SLA)" target="_blank" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-4 py-2 rounded-lg border border-rose-500/20 whitespace-nowrap w-fit">Agendar Reunião</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Auditoria e Hardening</span> <span class="text-slate-400 block mt-1">Verificação de infraestrutura, isolamento de ameaças e proteção de redes.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20uma%20Auditoria%20de%20Redes/Servidores" target="_blank" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-4 py-2 rounded-lg border border-rose-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Virtualização de Sistemas</span> <span class="text-slate-400 block mt-1">Otimização de servidores físicos através de virtualização (Hyper-V, Proxmox).</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20preciso%20de%20ajuda%20com%20Virtualização%20de%20Sistemas" target="_blank" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-4 py-2 rounded-lg border border-rose-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center border-b border-slate-800/50 pb-3 gap-3">
+                <div><span class="text-white font-bold text-base">Backup Gerenciado (DRaaS)</span> <span class="text-slate-400 block mt-1">Cópias de segurança com testes trimestrais contra perda de dados vitais.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20implementar%20um%20Backup%20Gerenciado" target="_blank" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-4 py-2 rounded-lg border border-rose-500/20 whitespace-nowrap w-fit">Orçar Serviço</a>
+              </li>
+              <li class="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3">
+                <div><span class="text-white font-bold text-base">Consultoria LGPD</span> <span class="text-slate-400 block mt-1">Orientação e planos de conformidade básica para micro e pequenas empresas.</span></div>
+                <a href="https://wa.me/5512996005169?text=Olá,%20gostaria%20de%20Consultoria%20sobre%20LGPD" target="_blank" class="text-rose-400 text-xs hover:text-rose-300 bg-rose-500/10 px-4 py-2 rounded-lg border border-rose-500/20 whitespace-nowrap w-fit">Consultar</a>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="py-20 px-6 bg-slate-900/30">
+    <div class="max-w-5xl mx-auto text-center">
+      <h3 class="text-2xl md:text-3xl font-bold mb-10">Quem confia no nosso trabalho</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <blockquote class="p-8 card-tech rounded-2xl text-left">
+          <p class="text-slate-300 mb-4 leading-relaxed">"O Thiago resolveu nossa internet no sítio. Ninguém mais conseguiu entregar a estabilidade que precisávamos."</p>
+          <footer class="text-sky-400 text-xs font-bold uppercase tracking-wider">— Produtor Rural, Pedra Bonita</footer>
+        </blockquote>
+        <blockquote class="p-8 card-tech rounded-2xl text-left">
+          <p class="text-slate-300 mb-4 leading-relaxed">"Melhorou o PDV da minha loja; nosso sistema não trava mais e as vendas ficaram muito mais rápidas."</p>
+          <footer class="text-sky-400 text-xs font-bold uppercase tracking-wider">— Comércio Local, Manhuaçu</footer>
+        </blockquote>
+        <blockquote class="p-8 card-tech rounded-2xl text-left">
+          <p class="text-slate-300 mb-4 leading-relaxed">"Configuração da transmissão impecável. Nossos eventos agora têm qualidade profissional."</p>
+          <footer class="text-sky-400 text-xs font-bold uppercase tracking-wider">— Instituição Religiosa</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="py-20 px-6">
+    <div class="max-w-5xl mx-auto card-tech p-10 md:p-14 rounded-3xl border border-slate-800">
+      <div class="md:flex gap-12 items-center">
+        <div class="flex-1">
+          <h2 class="text-3xl font-bold mb-6">A expertise por trás da <span class="text-gradient">Top1nfo.</span></h2>
+          <p class="text-slate-400 mb-6 leading-relaxed">
+            Liderada por <strong>Thiago Pianca</strong>, a Top1nfo traz bagagem corporativa e desenvolvimento de sistemas desde 2011. Com sólida experiência internacional na Europa (Suíça e Espanha), entregamos soluções que unem a precisão técnica da engenharia à visão estratégica de negócios [cite: 5-15, 83-84].
+          </p>
+          <div class="flex flex-wrap gap-3 text-xs font-semibold text-slate-300 mb-8">
+            <span class="bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">Analista de Sistemas</span>
+            <span class="bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">Especialista ERP</span>
+            <span class="bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">Suporte Bilíngue</span>
+            <span class="bg-slate-800 px-4 py-2 rounded-lg border border-slate-700">Gestão B2B</span>
+          </div>
+          <a href="https://wa.me/5512996005169" target="_blank" class="inline-flex items-center gap-2 text-sky-400 hover:text-sky-300 font-bold transition-colors">
+            Fale diretamente com o Especialista <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+        <div class="mt-10 md:mt-0 md:w-1/3">
+          <div class="aspect-square rounded-2xl bg-gradient-to-br from-slate-800 to-slate-900 border border-slate-700 flex items-center justify-center relative overflow-hidden group">
+            <div class="absolute inset-0 bg-sky-500/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+            <i data-lucide="cpu" class="text-sky-400 w-24 h-24 relative z-10 opacity-80 group-hover:scale-110 transition-transform"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 border-t border-slate-800/60 text-slate-500 bg-slate-950 text-center">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-xl font-bold text-white mb-4 flex items-center justify-center gap-2">
+        <i data-lucide="cpu" class="text-sky-400 w-5 h-5"></i> TOP<span class="text-sky-400">1</span>NFO
+      </div>
+      <p class="mb-2 text-sm">Infraestrutura, Sistemas e Tecnologia de Elite.</p>
+      <p class="text-sm mb-6">Atendimento exclusivo: Pedra Bonita, Manhuaçu e Região.</p>
+      <p class="text-xs">&copy; 2026 Top1nfo. Liderado por Thiago Pianca. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5512996005169" target="_blank" class="fixed right-6 bottom-6 z-50 bg-green-500 hover:bg-green-400 text-white p-4 rounded-full shadow-lg shadow-green-500/30 hover:scale-110 transition-transform">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+  </a>
 
   <script>
     lucide.createIcons();
