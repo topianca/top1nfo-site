@@ -9,28 +9,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/lucide@latest"></script>
+  
+  <script src="https://unpkg.com/lucide@latest"></script>
 
   <style>
     :root{--bg:#020617;--accent:#38bdf8}
     body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
     
-    .glass-nav{ background: rgba(2, 6, 23, 0.8); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .glass-nav{ background: rgba(2, 6, 23, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
     .bg-grid{ background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px); }
     
     .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
 
-    /* Botões Pill (Arredondados) e Sofisticados */
+    /* Botões Premium com Ícones e Sombra Suave */
     .btn-premium {
       background: #f8fafc;
       color: #020617;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.2);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15);
     }
     .btn-premium:hover {
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(56, 189, 248, 0.4);
+      box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3);
+      background: #ffffff;
     }
 
     .btn-glass {
@@ -41,7 +43,7 @@
     }
     .btn-glass:hover {
       background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(56, 189, 248, 0.5);
+      border-color: rgba(56, 189, 248, 0.4);
       transform: translateY(-2px);
     }
   </style>
@@ -53,46 +55,50 @@
   <nav class="fixed w-full z-50 glass-nav">
     <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
       
-      <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-2 group">
-        <div class="p-1.5 bg-sky-500/10 rounded-lg border border-sky-500/20 group-hover:border-sky-500/50 transition-all">
-          <i data-lucide="cpu" class="text-sky-400 w-6 h-6"></i>
-        </div>
+      <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-3 group">
+        <i data-lucide="cpu" class="text-sky-400 w-7 h-7"></i>
         <span>TOP<span class="text-sky-400">1</span>NFO</span>
       </a>
 
-      <div class="hidden md:flex gap-10 items-center text-[13px] uppercase tracking-widest font-semibold text-slate-400">
-        <a href="#" class="text-white hover:text-sky-400 transition-colors border-b border-sky-500 pb-1">Início</a>
+      <div class="hidden md:flex gap-10 items-center text-[12px] uppercase tracking-[0.15em] font-bold text-slate-400">
+        <a href="#" class="text-white hover:text-sky-400 transition-colors">Início</a>
         <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
         <a href="#catalogo" class="hover:text-sky-400 transition-colors">Catálogo</a>
         <a href="#sobre" class="hover:text-sky-400 transition-colors">Empresa</a>
       </div>
 
-      <a href="https://wa.me/5512996005169" target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-full text-xs font-bold transition-all shadow-lg">
-        AGENDAR CONSULTORIA
+      <a href="https://wa.me/5512996005169" target="_blank" class="hidden sm:flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-full text-[11px] font-black uppercase tracking-wider transition-all shadow-lg shadow-sky-500/10">
+        <i data-lucide="message-square" class="w-4 h-4"></i> AGENDAR CONSULTORIA
       </a>
     </div>
   </nav>
 
   <main class="pt-48 pb-32 px-6 relative z-10">
-    <section class="max-w-5xl mx-auto text-center">
+    <section class="max-w-6xl mx-auto text-center">
       
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-sky-500/20 bg-sky-500/5 text-sky-400 text-[11px] font-bold uppercase tracking-[0.2em] mb-10">
+      <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-sky-500/20 bg-sky-500/5 text-sky-400 text-[11px] font-bold uppercase tracking-[0.25em] mb-12">
+        <span class="relative flex h-2 w-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+        </span>
         Pedra Bonita • Manhuaçu • Região
       </div>
 
-      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-10 text-gradient-white leading-[1.1]">
+      <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-10 text-gradient-white leading-[1.1] max-w-4xl mx-auto">
         Tecnologia de padrão global <br />para o <span class="text-gradient">motor da nossa região.</span>
       </h1>
 
-      <p class="text-lg md:text-xl text-slate-400 max-w-4xl mx-auto mb-14 leading-relaxed font-light">
+      <p class="text-lg md:text-xl text-slate-400 max-w-4xl mx-auto mb-16 leading-relaxed font-light">
         Do <strong>usuário comum e comércio local ao agronegócio</strong>, entregamos suporte técnico especializado para quem busca precisão. Unimos vasta experiência internacional em sistemas ERP complexos à infraestrutura essencial no campo para transformar a tecnologia em uma ferramenta de lucro, garantindo estabilidade e alta performance em cada conexão para que o seu negócio nunca pare.
       </p>
 
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-4 rounded-full font-bold text-sm flex items-center justify-center gap-3">
-          Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm flex items-center justify-center gap-3 group">
+          Solicitar Orçamento 
+          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
         </a>
-        <a href="#catalogo" class="btn-glass w-full sm:w-auto px-12 py-4 rounded-full font-bold text-sm text-white flex items-center justify-center">
+        <a href="#catalogo" class="btn-glass w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm text-white flex items-center justify-center gap-3">
+          <i data-lucide="layers" class="w-4 h-4 text-sky-400"></i>
           Conhecer Serviços
         </a>
       </div>
