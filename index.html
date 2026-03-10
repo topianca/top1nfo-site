@@ -1,6 +1,77 @@
-<main class="pt-48 pb-12 px-6 relative z-10">
+<!DOCTYPE html>
+<html lang="pt-br" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Top1nfo | Tecnologia Global e Regional – Pedra Bonita, MG</title>
+  
+  <meta name="description" content="Suporte corporativo e tecnologia de precisão em Pedra Bonita, Manhuaçu e região. Especialista em sistemas, infraestrutura rural e assessoria digital." />
+  <meta name="author" content="Thiago Pianca" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Top1nfo",
+    "telephone": "+55 12 99600-5169",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Pedra Bonita",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "url": "https://top1nfo-site.vercel.app"
+  }
+  </script>
+
+  <style>
+    :root{--bg:#020617;--accent:#38bdf8}
+    body { background-color: var(--bg); color: #f8fafc; font-family: 'Inter', sans-serif; overflow-x: hidden; }
+    .glass-nav{ background: rgba(2, 6, 23, 0.85); backdrop-filter: blur(12px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+    .bg-grid{ background-size: 40px 40px; background-image: linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px), linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px); }
+    .text-gradient { background: linear-gradient(135deg, #38bdf8 0%, #60a5fa 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .text-gradient-white { background: linear-gradient(180deg, #ffffff 0%, #94a3b8 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    
+    /* Botões Pill Sofisticados */
+    .btn-premium { background: #f8fafc; color: #020617; transition: all 0.3s ease; box-shadow: 0 4px 15px rgba(56, 189, 248, 0.15); }
+    .btn-premium:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(56, 189, 248, 0.3); background: #ffffff; }
+    .btn-glass { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(4px); transition: all 0.3s ease; }
+    .btn-glass:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(56, 189, 248, 0.4); transform: translateY(-2px); }
+
+    /* Cards */
+    .card-tech { background: linear-gradient(145deg, rgba(30, 41, 59, 0.3) 0%, rgba(15, 23, 42, 0.3) 100%); border: 1px solid rgba(255,255,255,0.04); transition:all .3s ease; }
+    .card-tech:hover { border-color: rgba(56, 189, 248, 0.3); transform: translateY(-5px); }
+  </style>
+</head>
+<body class="antialiased bg-grid relative">
+
+  <div aria-hidden="true" class="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-blue-600/10 blur-[150px] rounded-full pointer-events-none"></div>
+
+  <nav class="fixed w-full z-50 glass-nav">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#" class="text-2xl font-extrabold tracking-tighter flex items-center gap-3">
+        <i data-lucide="cpu" class="text-sky-400 w-7 h-7"></i>
+        <span>TOP<span class="text-sky-400">1</span>NFO</span>
+      </a>
+      <div class="hidden md:flex gap-10 items-center text-[12px] uppercase tracking-[0.15em] font-bold text-slate-400">
+        <a href="#" class="text-white hover:text-sky-400 transition-colors">Início</a>
+        <a href="#destaques" class="hover:text-sky-400 transition-colors">Destaques</a>
+        <a href="#sobre" class="hover:text-sky-400 transition-colors">Empresa</a>
+      </div>
+      <a href="https://wa.me/5512996005169" target="_blank" class="hidden sm:flex items-center gap-2 bg-sky-500 hover:bg-sky-400 text-slate-950 px-6 py-2.5 rounded-full text-[11px] font-black uppercase shadow-lg">
+        <i data-lucide="message-square" class="w-4 h-4"></i> AGENDAR CONSULTORIA
+      </a>
+    </div>
+  </nav>
+
+  <main class="pt-48 pb-12 px-6 relative z-10">
     <section class="max-w-6xl mx-auto text-center">
-      
       <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-sky-500/20 bg-sky-500/5 text-sky-400 text-[11px] font-bold uppercase tracking-[0.25em] mb-12">
         <span class="relative flex h-2 w-2">
           <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
@@ -8,79 +79,80 @@
         </span>
         Pedra Bonita • Manhuaçu • Região
       </div>
-
       <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-10 text-gradient-white leading-[1.1] max-w-4xl mx-auto">
         Tecnologia de padrão global para o <br class="hidden md:block" />
         <span class="text-gradient">motor da nossa região.</span>
       </h1>
-
       <p class="text-lg md:text-xl text-slate-400 max-w-4xl mx-auto mb-16 leading-relaxed font-light">
         Do usuário comum e comércio local ao agronegócio, entrego suporte técnico especializado para quem busca precisão. Da gestão de sistemas à infraestrutura essencial no campo, <strong>aplico minha experiência internacional para garantir que o seu negócio nunca pare por tecnologia.</strong>
       </p>
-
       <div class="flex flex-col sm:flex-row gap-6 justify-center items-center">
-        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm flex items-center justify-center gap-3 group">
-          Solicitar Orçamento 
-          <i data-lucide="arrow-right" class="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+        <a href="https://wa.me/5512996005169" target="_blank" class="btn-premium w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm flex items-center justify-center gap-3">
+          Solicitar Orçamento <i data-lucide="arrow-right" class="w-4 h-4"></i>
         </a>
         <a href="#destaques" class="btn-glass w-full sm:w-auto px-12 py-5 rounded-full font-bold text-sm text-white flex items-center justify-center gap-3">
-          <i data-lucide="layers" class="w-4 h-4 text-sky-400"></i>
-          Conhecer Soluções
+          <i data-lucide="layers" class="w-4 h-4 text-sky-400"></i> Conhecer Soluções
         </a>
       </div>
     </section>
   </main>
 
-  <section id="destaques" class="pt-8 pb-24 px-6 relative z-10">
+  <section id="destaques" class="pt-8 pb-32 px-6 relative z-10">
     <div class="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M2 3h20v14H2zM8 21h8M12 17v4"></path></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Manutenção e Montagem</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Manutenção completa, limpeza, montagem de PCs e upgrades de SSD/RAM. Seu computador de volta à máxima velocidade.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Limpeza técnica, montagem de PCs gamer/trabalho e upgrades de SSD/RAM para máxima velocidade.</p>
       </div>
 
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0"></path><circle cx="12" cy="20" r="1"></circle></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Internet Rural e Câmeras</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Conectividade estável para o campo e instalação de câmeras de segurança inteligentes com acesso total pelo celular.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Conexão estável para fazendas e instalação de sistemas de câmeras monitoradas pelo celular.</p>
       </div>
 
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
-          <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="7.5 4.21 12 6.81 16.5 4.21"></polyline><polyline points="7.5 19.79 7.5 14.6 3 12"></polyline><polyline points="21 12 16.5 14.6 16.5 19.79"></polyline><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
+          <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Sistemas para Negócios</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Consultoria especializada em sistemas de gestão para empresas. Organização, segurança de dados e eficiência operacional.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Consultoria em sistemas de gestão (ERP), organização de dados e eficiência para o comércio e empresas.</p>
       </div>
 
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
-          <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
+          <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path><path d="M2 12h20"></path></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Websites e Identidade</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Criação de logotipos, sites profissionais e catálogos digitais. Posicionamos sua marca de forma impecável na internet.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Criação de logotipos, sites profissionais e catálogos digitais para destacar seu negócio na internet.</p>
       </div>
 
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Educação Digital</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Aulas de informática VIP, cursos para terceira idade e treinamento de equipes para o uso correto de novas tecnologias.</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Aulas particulares de informática, cursos para terceira idade e treinamento de sistemas para equipes.</p>
       </div>
 
-      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center group">
-        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20 group-hover:border-sky-500/40 transition-all">
+      <div class="card-tech p-8 rounded-[2rem] flex flex-col items-center text-center">
+        <div class="bg-sky-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mb-6 border border-sky-500/20">
           <svg class="w-10 h-10 text-sky-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg>
         </div>
         <h3 class="text-xl font-bold mb-3">Assessoria Digital</h3>
-        <p class="text-slate-400 text-sm leading-relaxed">Apoio técnico em licitações, assessoria para compras online seguras e auxílio em serviços públicos digitais (Gov.br).</p>
+        <p class="text-slate-400 text-sm leading-relaxed">Apoio técnico em licitações, assessoria para compras online seguras e auxílio em serviços públicos (Gov.br).</p>
       </div>
 
     </div>
   </section>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
